@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<style>
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(./images/Casaholmes/casaholmes-video-background.jpg) no-repeat;
+    background-size: cover;
+}
+</style>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="Casa Holmes, Costa Rican Vacation Home For Rent in beautiful Playas del Coco. ">
+    <meta name="author" content="CreateIT">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="format-detection" content="telephone=no">
+    <title>Casa Holmes - Vacation House</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./css/style.css">-->
+    <!--[if lt IE 9]>
+    <script src="./bootstrap/js/html5shiv.min.js"></script>
+    <script src="./bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="./js/modernizr.custom.js"></script>
+</head>
+
+<body class="cssAnimate ct-headroom--fixedMenu onepager beach">
+    <div class="ct-preloader">
+        <div class="ct-preloader-content"></div>
+    </div>
+    <div class="ct-menuMobile">
+        <ul class="ct-menuMobile-navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About the House</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#vrbo">Availability</a></li>
+            <li><a href="#activities">Activites</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="" class="">
+        <div class="ct-navbarMobile ct-navbarMobile--inverse">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/Casaholmes/casaholmes-logo.png" alt="Logo Country">
+            </a>
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <header class=" scroll" id="home" data-height="460">
+            <div class="container">
+                <video autoplay loop poster="./images/Casaholmes/casaholmes-video-background.jpg" id="bgvid">
+                        <source src="polina.webm" type="video/webm">
+                        <source src="./video/CasHolmes-short_reverse.mp4" type="video/mp4">
+                </video>
+                <script type="text/javascript">
+                var vid = document.getElementById("bgvid");
+                vid.playbackRate = .8;
+                </script>
+                <a href="index.html">
+                    <div class="ct-u-marginTop150 ct-u-marginBottom150 text-center">
+                        <img height="270px" src="./images/translucent.png">
+                    </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ct-menu" data-startnavbar="620" data-offset="460">
+                <div class="container">
+                    <div class="ct-contact pull-right">
+                        <a href="#vrbo" class="ct-js-btnScroll">
+                            <div class="ct-contact-right">
+                                <i class="fa fa-ticket fa-fw"></i> Book Now
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <a href="index.html">
+                        <img src="./images/Casaholmes/casaholmes-logo-small.png" alt="Logo Casaholmes">
+                    </a>
+                    <nav class="navbar pull-right">
+                        <ul class="nav navbar-nav">
+                            <li class="onepage">
+                                <a href="#home" class="ct-js-btnScroll">Home</a>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#about" class="ct-js-btnScroll">About</a></li>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#amenities" class="ct-js-btnScroll">Amenities</a></li>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#testimonials" class="ct-js-btnScroll">Testimonials</a></li>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#gallery" class="ct-js-btnScroll">Gallery</a></li>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#vrbo" class="ct-js-btnScroll">Availability</a></li>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#activities" class="ct-js-btnScroll">Activites</a></li>
+                            </li>
+                            <li class="onepage">
+                                <li><a href="#contact" class="ct-js-btnScroll">Contact Us</a></li>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </header>
+        <div class="container ct-contactBox">
+            <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom80 scroll" id="about">
+                <h2><img src="./images/Casaholmes/frog.png" class="flip">Welcome! <img src="./images/Casaholmes/frog.png"></h2>
+                <small>Welcome to the place where imagination becomes real</small>
+                <p>Imagine waking to the gentle sounds of distant surf, the eerie echo of howler monkeys and the flutter and song of tropical birds. Imagine opening your eyes and seeing a hallucinatory view of mountains and islands meeting an ocean as blue and bright as the sky and Indigo butterflies floating past. Imagine rising from bed and walking through architectural spaces designed with such care and detail that every view is extraordinary and you feel as if you are truly walking in a world of celestial beauty. </p>
+                <!-- start slideshow -->
+                <div class="ct-js-owl owl-carousel owl-carousel--arrowsType2 ct-js-popupGallery" data-single="true" data-autoPlay="true" data-pagination="false" data-navigation="true" data-items="1" data-snap-ignore="true"><div class="item"><a href="./images/Slideshow/DSC_2945.jpg" class="ct-js-magnificPopupImage" title=" D S C_2945"><img src="./images/Slideshow/thumbnails/thumbnail-DSC_2945.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/DSC_3085.jpg" class="ct-js-magnificPopupImage" title=" D S C_3085"><img src="./images/Slideshow/thumbnails/thumbnail-DSC_3085.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/DSC_3130.jpg" class="ct-js-magnificPopupImage" title=" D S C_3130"><img src="./images/Slideshow/thumbnails/thumbnail-DSC_3130.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/DSC_3147.jpg" class="ct-js-magnificPopupImage" title=" D S C_3147"><img src="./images/Slideshow/thumbnails/thumbnail-DSC_3147.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/DSC_3157.jpg" class="ct-js-magnificPopupImage" title=" D S C_3157"><img src="./images/Slideshow/thumbnails/thumbnail-DSC_3157.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/DSC_3164.jpg" class="ct-js-magnificPopupImage" title=" D S C_3164"><img src="./images/Slideshow/thumbnails/thumbnail-DSC_3164.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/profileTakenFromPool.jpg" class="ct-js-magnificPopupImage" title="Profile Taken From Pool"><img src="./images/Slideshow/thumbnails/thumbnail-profileTakenFromPool.jpg" alt="Casa Holmes Slideshow"></a></div><div class="item"><a href="./images/Slideshow/viewOfCasaHolmesFromTheHillside.jpg" class="ct-js-magnificPopupImage" title="View Of Casa Holmes From The Hillside"><img src="./images/Slideshow/thumbnails/thumbnail-viewOfCasaHolmesFromTheHillside.jpg" alt="Casa Holmes Slideshow"></a></div></div>
+                <!-- end slideshow -->
+                </br>
+                <h2>History of the house</h2>
+                <small>
+
+                <p>Both my landscape architect husband and my backgrounds were strongly  influenced by beauty, art, and high quality craftsmanship. I grew up being privileged enough to travel around the world while staying in fabulous places. We fell in love with the natural beauty of Costa Rica the first time we saw it. Finding this spot with its location and views was a dream come true. We wanted to create a legacy of a beautiful restorative place where family and friends can truly retreat.</p>
+                <div id="panelThatSlides" style="display:none;">
+                    <div id="contentThatFades" style="opacity:0;filter:alpha(opacity=0);">
+                        <p>Despite the ongoing challenges we believe we have accomplished this. One of the blessings for me was using my many years of remodeling experience to create a home from it’s inception. Completing a home where even simple things like quality door knobs were in short supply was daunting. It has been a challenging process. Our creative collaboration with architect Victor Cañas in 2003 was energizing. He truly is one of Costa Rica’s treasures and now a friend of ours. Casa Holmes has won significant  awards and won the gold medal in the annual Central American architectural competition. Casa Holmes has been featured in books and magazines. However our biggest reward is in the comments we get from our guests or people’s reactions when they first enter Casa Holmes, We especially enjoy return visitors comments on the continual improvements they see.</p>
+
+                        <p>We follow one of my my father’s favorite sayings: “Leave a place where you live better than you found it. “ We hope the creation of Casa Holmes, along with our respect for Costa Rica’s resources and natural beauty, has done this.</p>
+                    </div>
+                </div>
+                    <span id="readmore" onclick="toggleSlider();" style="cursor:pointer;span:hover {text-decoration:none;text-shadow: 1px 1px 1px #555;}">Read More</span>
+            </div>
+        </div>
+        <div class="ct-mediaSection" data-stellar-background-ratio="0.3" data-type="parallax" data-bg-image="./images/Casaholmes/casaholmes-background.jpg" data-bg-image-mobile="./images/content/beach-divided-section.jpg">
+            <div class="ct-dividedSection ct-dividedSection--primary">
+                <div class="ct-scaleImage">
+                    <img src="./images/Casaholmes/casaholmes1.jpg" alt="Chairs">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-8">
+                            <div class="ct-dividedSection-content ct-u-paddingBoth55">
+                                <h3 class="ct-u-paddingBottom10">Imagination becomes reality.</h3>
+                                <p>The hillside location and unique glass-walled architecture provide wide panorama views of Coco bay.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct-dividedSection-mask"></div>
+            </div>
+        </div>
+            <div class="row scroll" id="amenities">
+                <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom20">
+                    <h2>Amenities</h2>
+                </div>
+                <div class="ct-dividedMediaSection ct-dividedMediaSection--owl ct-u-marginBottom10 ct-u-marginTop80">
+                                <!-- start upperamenities -->
+                                <div class="ct-dividedMediaSection-left"><div id="sync1" class="owl-carousel ct-js-popupGallery owl-carousel--arrowsType2" data-snap-ignore="true"><div class="item"><a href="./images/Amenities/IMG_0182.jpg" class="ct-js-magnificPopupImage" title=" I M G_0182"><img src="./images/Amenities/IMG_0182.jpg" alt=" I M G_0182"></a></div><div class="item"><a href="./images/Amenities/IMG_0184.jpg" class="ct-js-magnificPopupImage" title=" I M G_0184"><img src="./images/Amenities/IMG_0184.jpg" alt=" I M G_0184"></a></div><div class="item"><a href="./images/Amenities/IMG_0186.jpg" class="ct-js-magnificPopupImage" title=" I M G_0186"><img src="./images/Amenities/IMG_0186.jpg" alt=" I M G_0186"></a></div><div class="item"><a href="./images/Amenities/IMG_0187.jpg" class="ct-js-magnificPopupImage" title=" I M G_0187"><img src="./images/Amenities/IMG_0187.jpg" alt=" I M G_0187"></a></div><div class="item"><a href="./images/Amenities/thereIsAGlencairnForYourConvenience.jpg" class="ct-js-magnificPopupImage" title="There Is A Glencairn For Your Convenience"><img src="./images/Amenities/thereIsAGlencairnForYourConvenience.jpg" alt="There Is A Glencairn For Your Convenience"></a></div></div></div>
+                                <!-- end upperamenities -->
+                    <div class="ct-dividedMediaSection-right">
+                        <h3>At your disposal</h3>
+                        <ul class="ct-listBox ct-listBox--divided list-unstyled">
+                            <li>
+                                <span><i class="fa fa-cloud"></i> 4 bedrooms</span>
+                                <span><i class="fa fa-dollar"></i> 4 bathrooms</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-fire"></i> 1 King size bed</span>
+                                <span><i class="fa fa-soccer-ball-o"></i>Wireless Internet </span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-users"></i> 2 Queen size beds</span>
+                                <span><i class="fa fa-play-circle-o"></i>DVD Player/ Satelite TV</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-heart"></i> 2 double beds</span>
+                                <span><i class="fa fa-gamepad"></i>Wireless Internet</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-tree"></i> 3 twin beds</span>
+                                <span><i class="fa fa-bomb"></i>Wheelchair accessible</span>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                                <!-- start loweramenities -->
+                                <div id="sync2" class="owl-carousel" data-snap-ignore="true"><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0182.jpg" alt=" I M G_0182"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0184.jpg" alt=" I M G_0184"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0186.jpg" alt=" I M G_0186"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0187.jpg" alt=" I M G_0187"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-thereIsAGlencairnForYourConvenience.jpg" alt="There Is A Glencairn For Your Convenience"></div></div></div>
+                                <!-- end loweramenities -->
+            </div>
+        <div class="container">
+            <div class="row ct-u-paddingBottom10 ct-u-marginTop0">
+                <div class="col-md-6 col-md-offset-0">
+                    <div class="ct-infoBox ct-infoBox--casual">
+                        <div class="ct-infoBox-content">
+                            <a href="http://www.amarillasinternet.com/rocioskitchen/" target="_blank"><h3>Catered meals available</h3></a>
+                            <p>Casa Holmes has enlisted chef, Rocio Larin, as its prefered caterer for their guests. A catered meal by her team is not to be missed.
+fresh locally grown ingredients with eye catching presentations made with a Central American flair make her offerings irresistable. We ask that our clients to contact her directly and promptly so she can meet your specific  needs. If you do partake in her fair you will findout why she is so popular and has a great reputation. </p> <a href="http://www.amarillasinternet.com/rocioskitchen/" target="_blank" class="btn btn-primary">More information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ct-js-owl owl-carousel" data-single="true" data-autoPlay="false" data-pagination="false" data-items="1" data-snap-ignore="true">
+                        <div class="item">
+                            <img src="./images/Casaholmes/catered-food2.jpg" alt="Latest Offer 1">
+                        </div>
+                        <div class="item">
+                            <img src="./images/Casaholmes/catered-food1.jpg" alt="Latest Offer 2">
+                        </div>
+                        <div class="item">
+                            <a href="./images/content/country-latest-offer-item3.jpg" class="ct-js-magnificPopupImage" title="Modern Interior"><img src="./images/content/country-latest-offer-item3.jpg" alt="Latest Offer 3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ct-u-paddingBottom30 ct-u-marginBottom50">
+            <div class="col-md-6">
+                    <div class="ct-infoBox ct-infoBox--casual">
+                        <div class="ct-infoBox-content">
+                            <a href="http://www.noproblemacr.com/"><h3>Casa Holmes Managers</h3></a>
+                            <p>Wes and Lisa Rintelen are a competent gracious husband/wife  team who oversee Casa Holmes. They live closeby in Hermosa, a town next to Playas del Coco.
+Not only do they make sure Casa Holmes is in the best possible condition when you arrive but they will greet you and orient you to our home. They are also  willing to help you with getting  concierge services, rental vehicles etc…</p>                            <a href="http://www.noproblemacr.com/" class="btn btn-primary">More Information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ct-js-owl owl-carousel" data-single="true" data-autoPlay="true" data-pagination="false" data-items="1" data-snap-ignore="true">
+                        <div class="item">
+                         <img src="./images/Casaholmes/managers.jpg" alt="Latest Offer 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container ct-contactBox">
+        <div class="text-center ct-u-paddingTop60">
+            <h2>Virtual Tour</h2>
+            <small>Take a virtual tour before you book the house!</small>
+                <p>If you are looking for the perfect getaway from the stress of hotel and ground clearance, then you are to buy the vacation home in Warshaw. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta feugiat maximus. Nunc vehiculam sagittis velit non auctor. </p>
+            </div>
+            <div class="ct-dividedMediaSection ct-u-marginBottom80 text-center">
+                <iframe src="https://player.vimeo.com/video/135340035" width="800px" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ct-googleMap ct-js-googleMap" data-location="10.560951, -85.689129" data-zoom="7" data-height="800"></div>
+        </div>
+        <div class="container ct-contactBox" id="testimonials">
+            <div class="row">
+                <div class="col-md-12 text-center ct-u-paddingTop60 ct-u-paddingBottom100">
+                    <h2>What our clients are saying</h2>
+                </div>
+            </div>
+            <!-- start testimonials -->
+            <div id="sync3" class="owl-carousel ct-js-popupGallery owl-carousel--arrowsType2" data-snap-ignore="true"><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 col-lg-push-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 col-lg-pull-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Judy and Bill Jones</div><div class="text-uppercase ct-u-size16"></div></div></div></div></div></div><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 col-lg-push-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 col-lg-pull-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Phil</div><div class="text-uppercase ct-u-size16"></div></div></div></div></div></div><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 col-lg-push-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 col-lg-pull-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Taylor</div><div class="text-uppercase ct-u-size16">Accountant</div></div></div></div></div></div><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Taylor</div><div class="text-uppercase ct-u-size16">Accountant</div></div></div></div></div></div><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Taylor</div><div class="text-uppercase ct-u-size16">Accountant</div></div></div></div></div></div><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Taylor</div><div class="text-uppercase ct-u-size16">Accountant</div></div></div></div></div></div><div class="item"><div class="row ct-dividedSlider"><div class="col-lg-6 ct-dividedSlider-media"><img src="./images/whitespace.png" alt="Casa Holmes"></div><div class="col-lg-6 ct-dividedSlider-text"><div class="ct-u-displayTableVertical"><div class="ct-u-displayTableCell"><q>When we first came upon this enchanted place we were stunned with it's beauty. From the moment we entered the doors the dream began. We will never forget the magic moments spent here.</q><div class="ct-u-size18 ct-u-paddingTop70">Taylor</div><div class="text-uppercase ct-u-size16">Accountant</div></div></div></div></div></div></div><div class="container"><div id="sync4" class="owl-carousel" data-snap-ignore="true"><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/blue-turtle.png" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>USA</span></div></div></div><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/whaleshark.jpg" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>San Jose, California</span></div></div></div><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/bird.jpg" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>Boulder , CO</span></div></div></div><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/frog.png" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>Boulder , CO</span></div></div></div><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/green-turtle.png" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>Boulder , CO</span></div></div></div><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/bird.jpg" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>Boulder , CO</span></div></div></div><div class="item"><div class="media media-slider ct-u-paddingBoth60"><div class="media-left"><img class="media-object" src="./images/Casaholmes/bird.jpg" alt="Reference"></div><div class="media-body"><span class="media-heading">1 week stay</span><span>Boulder , CO</span></div></div></div></div></div>
+            <!-- end testimonials -->
+        </div>
+        <div class="container scroll ct-contactBox" id="gallery">
+            <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom0">
+                <h2>Gallery</h2>
+                <p>The Costa Rican architect Victor Cañas designed the house. Cañas is on of Costa Rica’s premier architects and his renown extends throughout Latin America. He describes himself as a “tropical modernist” and he is known for his sensitive understanding of the site.</p>
+            </div>
+            <div class="row ct-u-paddingBoth0">
+                <!-- Start Gallery -->
+                <div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Adventures/Alligators!Are!Awesome!.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" Alligators! Are! Awesome!"><img src="./images/Gallery/thumbnails/thumbnail-Alligators!Are!Awesome!.jpg" alt="Adventures"></a><a href="./images/Gallery/Adventures/DSC06469.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" D S C06469"></a><a href="./images/Gallery/Adventures/DSCF3930.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" D S C F3930"></a><a href="./images/Gallery/Adventures/HikeAlongTheBankOfARushingRiver.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" Hike Along The Bank Of A Rushing River"></a><a href="./images/Gallery/Adventures/IMG_0057.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_0057"></a><a href="./images/Gallery/Adventures/IMG_1524.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_1524"></a><a href="./images/Gallery/Adventures/IMG_1555.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_1555"></a><a href="./images/Gallery/Adventures/IMG_2109.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_2109"></a><a href="./images/Gallery/Adventures/IMG_2137.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_2137"></a><a href="./images/Gallery/Adventures/IMG_2198.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_2198"></a><a href="./images/Gallery/Adventures/IMG_2200.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_2200"></a><a href="./images/Gallery/Adventures/IMG_4011.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4011"></a><a href="./images/Gallery/Adventures/IMG_4320.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4320"></a><a href="./images/Gallery/Adventures/IMG_4329.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4329"></a><a href="./images/Gallery/Adventures/IMG_4516.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4516"></a><a href="./images/Gallery/Adventures/IMG_4523.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4523"></a><a href="./images/Gallery/Adventures/IMG_4563.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4563"></a><a href="./images/Gallery/Adventures/IMG_4600.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" I M G_4600"></a><a href="./images/Gallery/Adventures/P1000050.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1000050"></a><a href="./images/Gallery/Adventures/P1000159.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1000159"></a><a href="./images/Gallery/Adventures/P1000187 2.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1000187 2"></a><a href="./images/Gallery/Adventures/P1000324.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1000324"></a><a href="./images/Gallery/Adventures/P1000912.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1000912"></a><a href="./images/Gallery/Adventures/P1010014_3.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1010014_3"></a><a href="./images/Gallery/Adventures/P1040278.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1040278"></a><a href="./images/Gallery/Adventures/P1040295.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1040295"></a><a href="./images/Gallery/Adventures/P1040303.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1040303"></a><a href="./images/Gallery/Adventures/P1040308.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1040308"></a><a href="./images/Gallery/Adventures/P1040310.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1040310"></a><a href="./images/Gallery/Adventures/P1040313.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" P1040313"></a><a href="./images/Gallery/Adventures/Pictures from Brennan 032.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" Pictures from  Brennan 032"></a><a href="./images/Gallery/Adventures/Pictures from Brennan 034.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" Pictures from  Brennan 034"></a><a href="./images/Gallery/Adventures/Pictures from Brennan 089.jpg" class="ct-js-magnificPopupImage" category="Adventures" title=" Pictures from  Brennan 089"></a></div><h4>Adventures</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Architecture/DSC_0585.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_0585"><img src="./images/Gallery/thumbnails/thumbnail-DSC_0585.jpg" alt="Architecture"></a><a href="./images/Gallery/Architecture/DSC_2945.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_2945"></a><a href="./images/Gallery/Architecture/DSC_3085.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_3085"></a><a href="./images/Gallery/Architecture/DSC_3130.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_3130"></a><a href="./images/Gallery/Architecture/DSC_3139.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_3139"></a><a href="./images/Gallery/Architecture/DSC_3147.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_3147"></a><a href="./images/Gallery/Architecture/DSC_3157.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_3157"></a><a href="./images/Gallery/Architecture/DSC_3164.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" D S C_3164"></a><a href="./images/Gallery/Architecture/IMG_2105.jpg" class="ct-js-magnificPopupImage" category="Architecture" title=" I M G_2105"></a><a href="./images/Gallery/Architecture/profileTakenFromPool.jpg" class="ct-js-magnificPopupImage" category="Architecture" title="Profile Taken From Pool"></a><a href="./images/Gallery/Architecture/theWallsArePrimarilyMadeOfGlassForIncredibleViews.jpg" class="ct-js-magnificPopupImage" category="Architecture" title="The Walls Are Primarily Made Of Glass For Incredible Views"></a><a href="./images/Gallery/Architecture/viewOfCasaHolmesFromTheHillside.jpg" class="ct-js-magnificPopupImage" category="Architecture" title="View Of Casa Holmes From The Hillside"></a></div><h4>Architecture</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Beach/P1000805.jpg" class="ct-js-magnificPopupImage" category="Beach" title=" P1000805"><img src="./images/Gallery/thumbnails/thumbnail-P1000805.jpg" alt="Beach"></a><a href="./images/Gallery/Beach/P1000811.jpg" class="ct-js-magnificPopupImage" category="Beach" title=" P1000811"></a></div><h4>Beach</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Entrance/DSC00273.jpg" class="ct-js-magnificPopupImage" category="Entrance" title=" D S C00273"><img src="./images/Gallery/thumbnails/thumbnail-DSC00273.jpg" alt="Entrance"></a><a href="./images/Gallery/Entrance/DSC_0588.jpg" class="ct-js-magnificPopupImage" category="Entrance" title=" D S C_0588"></a><a href="./images/Gallery/Entrance/P1000365.jpg" class="ct-js-magnificPopupImage" category="Entrance" title=" P1000365"></a></div><h4>Entrance</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Food/DSC06526.jpg" class="ct-js-magnificPopupImage" category="Food" title=" D S C06526"><img src="./images/Gallery/thumbnails/thumbnail-DSC06526.jpg" alt="Food"></a><a href="./images/Gallery/Food/P1000299.jpg" class="ct-js-magnificPopupImage" category="Food" title=" P1000299"></a><a href="./images/Gallery/Food/P1010229.jpg" class="ct-js-magnificPopupImage" category="Food" title=" P1010229"></a></div><h4>Food</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Good Times/P1000763.jpg" class="ct-js-magnificPopupImage" category="Good Times" title=" P1000763"><img src="./images/Gallery/thumbnails/thumbnail-P1000763.jpg" alt="Good Times"></a><a href="./images/Gallery/Good Times/P1000779.jpg" class="ct-js-magnificPopupImage" category="Good Times" title=" P1000779"></a></div><h4>Good Times</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Hillside_Patio/DSC_3048.jpg" class="ct-js-magnificPopupImage" category="Hillside_Patio" title=" D S C_3048"><img src="./images/Gallery/thumbnails/thumbnail-DSC_3048.jpg" alt="Hillside_Patio"></a><a href="./images/Gallery/Hillside_Patio/IMG_0211.jpg" class="ct-js-magnificPopupImage" category="Hillside_Patio" title=" I M G_0211"></a><a href="./images/Gallery/Hillside_Patio/IMG_1664_2.jpg" class="ct-js-magnificPopupImage" category="Hillside_Patio" title=" I M G_1664_2"></a></div><h4>Hillside_Patio</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Honeymoons/IMG_3913.jpg" class="ct-js-magnificPopupImage" category="Honeymoons" title=" I M G_3913"><img src="./images/Gallery/thumbnails/thumbnail-IMG_3913.jpg" alt="Honeymoons"></a><a href="./images/Gallery/Honeymoons/IMG_3914.jpg" class="ct-js-magnificPopupImage" category="Honeymoons" title=" I M G_3914"></a><a href="./images/Gallery/Honeymoons/IMG_3916.jpg" class="ct-js-magnificPopupImage" category="Honeymoons" title=" I M G_3916"></a><a href="./images/Gallery/Honeymoons/P1000307.jpg" class="ct-js-magnificPopupImage" category="Honeymoons" title=" P1000307"></a><a href="./images/Gallery/Honeymoons/P1000371.jpg" class="ct-js-magnificPopupImage" category="Honeymoons" title=" P1000371"></a></div><h4>Honeymoons</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Kitchen/DSC_0630.jpg" class="ct-js-magnificPopupImage" category="Kitchen" title=" D S C_0630"><img src="./images/Gallery/thumbnails/thumbnail-DSC_0630.jpg" alt="Kitchen"></a><a href="./images/Gallery/Kitchen/DSC_3031.jpg" class="ct-js-magnificPopupImage" category="Kitchen" title=" D S C_3031"></a><a href="./images/Gallery/Kitchen/DSC_3035.jpg" class="ct-js-magnificPopupImage" category="Kitchen" title=" D S C_3035"></a><a href="./images/Gallery/Kitchen/IMG_0136.jpg" class="ct-js-magnificPopupImage" category="Kitchen" title=" I M G_0136"></a></div><h4>Kitchen</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Living_Room/DSC_0011.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" D S C_0011"><img src="./images/Gallery/thumbnails/thumbnail-DSC_0011.jpg" alt="Living_Room"></a><a href="./images/Gallery/Living_Room/DSC_0014.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" D S C_0014"></a><a href="./images/Gallery/Living_Room/DSC_0605.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" D S C_0605"></a><a href="./images/Gallery/Living_Room/DSC_2966.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" D S C_2966"></a><a href="./images/Gallery/Living_Room/DSC_2975.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" D S C_2975"></a><a href="./images/Gallery/Living_Room/IMG_1660_2.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" I M G_1660_2"></a><a href="./images/Gallery/Living_Room/IMG_3805.jpg" class="ct-js-magnificPopupImage" category="Living_Room" title=" I M G_3805"></a></div><h4>Living_Room</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Lower Apartment/IMG_1670.jpg" class="ct-js-magnificPopupImage" category="Lower Apartment" title=" I M G_1670"><img src="./images/Gallery/thumbnails/thumbnail-IMG_1670.jpg" alt="Lower Apartment"></a></div><h4>Lower Apartment</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Master_bedroom/DSC_0153.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" D S C_0153"><img src="./images/Gallery/thumbnails/thumbnail-DSC_0153.jpg" alt="Master_bedroom"></a><a href="./images/Gallery/Master_bedroom/DSC_3065.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" D S C_3065"></a><a href="./images/Gallery/Master_bedroom/DSC_3115.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" D S C_3115"></a><a href="./images/Gallery/Master_bedroom/IMG_0134.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" I M G_0134"></a><a href="./images/Gallery/Master_bedroom/IMG_5643.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" I M G_5643"></a><a href="./images/Gallery/Master_bedroom/IMG_5659.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" I M G_5659"></a><a href="./images/Gallery/Master_bedroom/P1000336.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" P1000336"></a><a href="./images/Gallery/Master_bedroom/P1000338.jpg" class="ct-js-magnificPopupImage" category="Master_bedroom" title=" P1000338"></a></div><h4>Master_bedroom</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Oceanview_Patio/DSC00282.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C00282"><img src="./images/Gallery/thumbnails/thumbnail-DSC00282.jpg" alt="Oceanview_Patio"></a><a href="./images/Gallery/Oceanview_Patio/DSC_0139.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C_0139"></a><a href="./images/Gallery/Oceanview_Patio/DSC_2941.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C_2941"></a><a href="./images/Gallery/Oceanview_Patio/DSC_2945.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C_2945"></a><a href="./images/Gallery/Oceanview_Patio/DSC_2973.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C_2973"></a><a href="./images/Gallery/Oceanview_Patio/DSC_2976.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C_2976"></a><a href="./images/Gallery/Oceanview_Patio/DSC_2982.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" D S C_2982"></a><a href="./images/Gallery/Oceanview_Patio/IMG_1068.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" I M G_1068"></a><a href="./images/Gallery/Oceanview_Patio/IMG_1071.jpg" class="ct-js-magnificPopupImage" category="Oceanview_Patio" title=" I M G_1071"></a></div><h4>Oceanview_Patio</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Swimming Pool/DSC_0611.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_0611"><img src="./images/Gallery/thumbnails/thumbnail-DSC_0611.jpg" alt="Swimming Pool"></a><a href="./images/Gallery/Swimming Pool/DSC_2945.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_2945"></a><a href="./images/Gallery/Swimming Pool/DSC_2976.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_2976"></a><a href="./images/Gallery/Swimming Pool/DSC_3005.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_3005"></a><a href="./images/Gallery/Swimming Pool/DSC_3006.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_3006"></a><a href="./images/Gallery/Swimming Pool/DSC_3008.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_3008"></a><a href="./images/Gallery/Swimming Pool/DSC_3124.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" D S C_3124"></a><a href="./images/Gallery/Swimming Pool/IMG_3835_2.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" I M G_3835_2"></a><a href="./images/Gallery/Swimming Pool/P1000134 2.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" P1000134 2"></a><a href="./images/Gallery/Swimming Pool/P1010150.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" P1010150"></a><a href="./images/Gallery/Swimming Pool/P1010154.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" P1010154"></a><a href="./images/Gallery/Swimming Pool/P1010225.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title=" P1010225"></a><a href="./images/Gallery/Swimming Pool/briene.jpg" class="ct-js-magnificPopupImage" category="Swimming Pool" title="Briene"></a></div><h4>Swimming Pool</h4></div></div><div class="col-md-3 col-sm-6"> <div class="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50"><div class="ct-galleryContainer-image"><a href="./images/Gallery/Views/ GorgeousHillsideView.jpg" class="ct-js-magnificPopupImage" category="Views" title="  Gorgeous Hillside View"><img src="./images/Gallery/thumbnails/thumbnail- GorgeousHillsideView.jpg" alt="Views"></a><a href="./images/Gallery/Views/BeautifulGreenViews.jpg" class="ct-js-magnificPopupImage" category="Views" title=" Beautiful Green Views"></a><a href="./images/Gallery/Views/CocoBay.jpg" class="ct-js-magnificPopupImage" category="Views" title=" Coco Bay"></a><a href="./images/Gallery/Views/IMG_4503.jpg" class="ct-js-magnificPopupImage" category="Views" title=" I M G_4503"></a><a href="./images/Gallery/Views/LooksLikeTheRainsAreComing.jpg" class="ct-js-magnificPopupImage" category="Views" title=" Looks Like The Rains Are Coming"></a><a href="./images/Gallery/Views/P1010156.jpg" class="ct-js-magnificPopupImage" category="Views" title=" P1010156"></a><a href="./images/Gallery/Views/P1010232.jpg" class="ct-js-magnificPopupImage" category="Views" title=" P1010232"></a><a href="./images/Gallery/Views/P1040250.jpg" class="ct-js-magnificPopupImage" category="Views" title=" P1040250"></a><a href="./images/Gallery/Views/Playa_del_Coco-Costa_Rica.jpg" class="ct-js-magnificPopupImage" category="Views" title=" Playa_del_ Coco- Costa_ Rica"></a><a href="./images/Gallery/Views/UnbelievableSunsetsEveryDay.jpg" class="ct-js-magnificPopupImage" category="Views" title=" Unbelievable Sunsets Every Day"></a></div><h4>Views</h4></div></div>
+                <!-- end Gallery -->
+            </div>
+        </div>
+        <div class="ct-contactBox scroll ct-u-paddingBottom80" id="activities">
+            <div class="container ">
+                <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom60">
+                    <h2>Surroundings</h2>
+                    <small>Top spots in the lovely sunshine</small>
+                </div>
+            </div>
+            <div class="container">
+                <div class="ct-js-owl owl-carousel owl-carousel--arrowsType2" data-single="false" data-autoPlay="true" data-lgItems="3" data-mdItems="2" data-pagination="false" data-navigation="true" data-items="4" data-snap-ignore="true">
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item1.jpg" alt="Waterpark"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Sun Splash Family Waterpark</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">400m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item2.jpg" alt="Zoo"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Wildlife Refuge "Darling Zoo"</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">670m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item3.jpg" alt="Boat"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Boating in Warshaw</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">120m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item4.jpg" alt="Boat Tour"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Everglades Air Boat Tour</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">280m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item1.jpg" alt="Waterpark"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Sun Splash Family Waterpark</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">400m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item2.jpg" alt="Zoo"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Wildlife Refuge "Darling Zoo"</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">670m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item3.jpg" alt="Boat"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Boating in Warshaw</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">120m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item4.jpg" alt="Boat Tour"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Everglades Air Boat Tour</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">280m far</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vrbo" class="container scroll ct-u-paddingTop50">
+            <div class="text-center">
+                <h2>Book Now</h2>
+            </div>
+            <div class="row ct-u-paddingTop50 ct-u-paddingBottom70">
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <iframe scrolling="no" width="592" height="1024" frameBorder="0" style="overflow:hidden;border:none" src="http://www.vrbo.com/234008/calendar?widget=true"></iframe>
+                    <a href="http://www.vrbo.com/234008" style="display:block;text-align:center;margin-top:0px;font-size:12px;" rel="nofollow">Check us out on VRBO #234008</a>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="row">
+                        <form class="ct-bookForm" action="#">
+                            <div class="input-group col-md-12">
+                                <div class="ct-formSlash ct-u-marginBottom10"></div>
+                            </div>
+                            <div class="input-group col-md-12">
+                                <input type="text" class="form-control" name="name" placeholder="name">
+                            </div>
+                            <div class="input-group col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="email" class="form-control" name="email" placeholder="email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" name="phone" placeholder="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <select class="ct-selectCountry ct-select--full" id="country">
+                                            <option>&nbsp;</option>
+                                            <option value="United States of America">United States of America</option>
+                                            <option value="Costa Rica">Costa Rica</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="Afganistan">Afghanistan</option>
+                                            <option value="Albania">Albania</option>
+                                            <option value="Algeria">Algeria</option>
+                                            <option value="American Samoa">American Samoa</option>
+                                            <option value="Andorra">Andorra</option>
+                                            <option value="Angola">Angola</option>
+                                            <option value="Anguilla">Anguilla</option>
+                                            <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Armenia">Armenia</option>
+                                            <option value="Aruba">Aruba</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Azerbaijan">Azerbaijan</option>
+                                            <option value="Bahamas">Bahamas</option>
+                                            <option value="Bahrain">Bahrain</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="Barbados">Barbados</option>
+                                            <option value="Belarus">Belarus</option>
+                                            <option value="Belgium">Belgium</option>
+                                            <option value="Belize">Belize</option>
+                                            <option value="Benin">Benin</option>
+                                            <option value="Bermuda">Bermuda</option>
+                                            <option value="Bhutan">Bhutan</option>
+                                            <option value="Bolivia">Bolivia</option>
+                                            <option value="Bonaire">Bonaire</option>
+                                            <option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
+                                            <option value="Botswana">Botswana</option>
+                                            <option value="Brazil">Brazil</option>
+                                            <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                            <option value="Brunei">Brunei</option>
+                                            <option value="Bulgaria">Bulgaria</option>
+                                            <option value="Burkina Faso">Burkina Faso</option>
+                                            <option value="Burundi">Burundi</option>
+                                            <option value="Cambodia">Cambodia</option>
+                                            <option value="Cameroon">Cameroon</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Canary Islands">Canary Islands</option>
+                                            <option value="Cape Verde">Cape Verde</option>
+                                            <option value="Cayman Islands">Cayman Islands</option>
+                                            <option value="Central African Republic">Central African Republic</option>
+                                            <option value="Chad">Chad</option>
+                                            <option value="Channel Islands">Channel Islands</option>
+                                            <option value="Chile">Chile</option>
+                                            <option value="China">China</option>
+                                            <option value="Christmas Island">Christmas Island</option>
+                                            <option value="Cocos Island">Cocos Island</option>
+                                            <option value="Colombia">Colombia</option>
+                                            <option value="Comoros">Comoros</option>
+                                            <option value="Congo">Congo</option>
+                                            <option value="Cook Islands">Cook Islands</option>
+                                            <option value="Costa Rica">Costa Rica</option>
+                                            <option value="Cote DIvoire">Cote D'Ivoire</option>
+                                            <option value="Croatia">Croatia</option>
+                                            <option value="Cuba">Cuba</option>
+                                            <option value="Curaco">Curacao</option>
+                                            <option value="Cyprus">Cyprus</option>
+                                            <option value="Czech Republic">Czech Republic</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="Djibouti">Djibouti</option>
+                                            <option value="Dominica">Dominica</option>
+                                            <option value="Dominican Republic">Dominican Republic</option>
+                                            <option value="East Timor">East Timor</option>
+                                            <option value="Ecuador">Ecuador</option>
+                                            <option value="Egypt">Egypt</option>
+                                            <option value="El Salvador">El Salvador</option>
+                                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                            <option value="Eritrea">Eritrea</option>
+                                            <option value="Estonia">Estonia</option>
+                                            <option value="Ethiopia">Ethiopia</option>
+                                            <option value="Falkland Islands">Falkland Islands</option>
+                                            <option value="Faroe Islands">Faroe Islands</option>
+                                            <option value="Fiji">Fiji</option>
+                                            <option value="Finland">Finland</option>
+                                            <option value="France">France</option>
+                                            <option value="French Guiana">French Guiana</option>
+                                            <option value="French Polynesia">French Polynesia</option>
+                                            <option value="French Southern Ter">French Southern Ter</option>
+                                            <option value="Gabon">Gabon</option>
+                                            <option value="Gambia">Gambia</option>
+                                            <option value="Georgia">Georgia</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="Ghana">Ghana</option>
+                                            <option value="Gibraltar">Gibraltar</option>
+                                            <option value="Great Britain">Great Britain</option>
+                                            <option value="Greece">Greece</option>
+                                            <option value="Greenland">Greenland</option>
+                                            <option value="Grenada">Grenada</option>
+                                            <option value="Guadeloupe">Guadeloupe</option>
+                                            <option value="Guam">Guam</option>
+                                            <option value="Guatemala">Guatemala</option>
+                                            <option value="Guinea">Guinea</option>
+                                            <option value="Guyana">Guyana</option>
+                                            <option value="Haiti">Haiti</option>
+                                            <option value="Hawaii">Hawaii</option>
+                                            <option value="Honduras">Honduras</option>
+                                            <option value="Hong Kong">Hong Kong</option>
+                                            <option value="Hungary">Hungary</option>
+                                            <option value="Iceland">Iceland</option>
+                                            <option value="India">India</option>
+                                            <option value="Indonesia">Indonesia</option>
+                                            <option value="Iran">Iran</option>
+                                            <option value="Iraq">Iraq</option>
+                                            <option value="Ireland">Ireland</option>
+                                            <option value="Isle of Man">Isle of Man</option>
+                                            <option value="Israel">Israel</option>
+                                            <option value="Italy">Italy</option>
+                                            <option value="Jamaica">Jamaica</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Jordan">Jordan</option>
+                                            <option value="Kazakhstan">Kazakhstan</option>
+                                            <option value="Kenya">Kenya</option>
+                                            <option value="Kiribati">Kiribati</option>
+                                            <option value="Korea North">Korea North</option>
+                                            <option value="Korea Sout">Korea South</option>
+                                            <option value="Kuwait">Kuwait</option>
+                                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                            <option value="Laos">Laos</option>
+                                            <option value="Latvia">Latvia</option>
+                                            <option value="Lebanon">Lebanon</option>
+                                            <option value="Lesotho">Lesotho</option>
+                                            <option value="Liberia">Liberia</option>
+                                            <option value="Libya">Libya</option>
+                                            <option value="Liechtenstein">Liechtenstein</option>
+                                            <option value="Lithuania">Lithuania</option>
+                                            <option value="Luxembourg">Luxembourg</option>
+                                            <option value="Macau">Macau</option>
+                                            <option value="Macedonia">Macedonia</option>
+                                            <option value="Madagascar">Madagascar</option>
+                                            <option value="Malaysia">Malaysia</option>
+                                            <option value="Malawi">Malawi</option>
+                                            <option value="Maldives">Maldives</option>
+                                            <option value="Mali">Mali</option>
+                                            <option value="Malta">Malta</option>
+                                            <option value="Marshall Islands">Marshall Islands</option>
+                                            <option value="Martinique">Martinique</option>
+                                            <option value="Mauritania">Mauritania</option>
+                                            <option value="Mauritius">Mauritius</option>
+                                            <option value="Mayotte">Mayotte</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="Midway Islands">Midway Islands</option>
+                                            <option value="Moldova">Moldova</option>
+                                            <option value="Monaco">Monaco</option>
+                                            <option value="Mongolia">Mongolia</option>
+                                            <option value="Montserrat">Montserrat</option>
+                                            <option value="Morocco">Morocco</option>
+                                            <option value="Mozambique">Mozambique</option>
+                                            <option value="Myanmar">Myanmar</option>
+                                            <option value="Nambia">Nambia</option>
+                                            <option value="Nauru">Nauru</option>
+                                            <option value="Nepal">Nepal</option>
+                                            <option value="Netherland Antilles">Netherland Antilles</option>
+                                            <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                            <option value="Nevis">Nevis</option>
+                                            <option value="New Caledonia">New Caledonia</option>
+                                            <option value="New Zealand">New Zealand</option>
+                                            <option value="Nicaragua">Nicaragua</option>
+                                            <option value="Niger">Niger</option>
+                                            <option value="Nigeria">Nigeria</option>
+                                            <option value="Niue">Niue</option>
+                                            <option value="Norfolk Island">Norfolk Island</option>
+                                            <option value="Norway">Norway</option>
+                                            <option value="Oman">Oman</option>
+                                            <option value="Pakistan">Pakistan</option>
+                                            <option value="Palau Island">Palau Island</option>
+                                            <option value="Palestine">Palestine</option>
+                                            <option value="Panama">Panama</option>
+                                            <option value="Papua New Guinea">Papua New Guinea</option>
+                                            <option value="Paraguay">Paraguay</option>
+                                            <option value="Peru">Peru</option>
+                                            <option value="Phillipines">Philippines</option>
+                                            <option value="Pitcairn Island">Pitcairn Island</option>
+                                            <option value="Poland">Poland</option>
+                                            <option value="Portugal">Portugal</option>
+                                            <option value="Puerto Rico">Puerto Rico</option>
+                                            <option value="Qatar">Qatar</option>
+                                            <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                            <option value="Republic of Serbia">Republic of Serbia</option>
+                                            <option value="Reunion">Reunion</option>
+                                            <option value="Romania">Romania</option>
+                                            <option value="Russia">Russia</option>
+                                            <option value="Rwanda">Rwanda</option>
+                                            <option value="St Barthelemy">St Barthelemy</option>
+                                            <option value="St Eustatius">St Eustatius</option>
+                                            <option value="St Helena">St Helena</option>
+                                            <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                            <option value="St Lucia">St Lucia</option>
+                                            <option value="St Maarten">St Maarten</option>
+                                            <option value="St Pierre &amp; Miquelon">St Pierre &amp; Miquelon</option>
+                                            <option value="St Vincent &amp; Grenadines">St Vincent &amp; Grenadines</option>
+                                            <option value="Saipan">Saipan</option>
+                                            <option value="Samoa">Samoa</option>
+                                            <option value="Samoa American">Samoa American</option>
+                                            <option value="San Marino">San Marino</option>
+                                            <option value="Sao Tome &amp; Principe">Sao Tome &amp; Principe</option>
+                                            <option value="Saudi Arabia">Saudi Arabia</option>
+                                            <option value="Senegal">Senegal</option>
+                                            <option value="Serbia">Serbia</option>
+                                            <option value="Seychelles">Seychelles</option>
+                                            <option value="Sierra Leone">Sierra Leone</option>
+                                            <option value="Singapore">Singapore</option>
+                                            <option value="Slovakia">Slovakia</option>
+                                            <option value="Slovenia">Slovenia</option>
+                                            <option value="Solomon Islands">Solomon Islands</option>
+                                            <option value="Somalia">Somalia</option>
+                                            <option value="South Africa">South Africa</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Sri Lanka">Sri Lanka</option>
+                                            <option value="Sudan">Sudan</option>
+                                            <option value="Suriname">Suriname</option>
+                                            <option value="Swaziland">Swaziland</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Switzerland">Switzerland</option>
+                                            <option value="Syria">Syria</option>
+                                            <option value="Tahiti">Tahiti</option>
+                                            <option value="Taiwan">Taiwan</option>
+                                            <option value="Tajikistan">Tajikistan</option>
+                                            <option value="Tanzania">Tanzania</option>
+                                            <option value="Thailand">Thailand</option>
+                                            <option value="Togo">Togo</option>
+                                            <option value="Tokelau">Tokelau</option>
+                                            <option value="Tonga">Tonga</option>
+                                            <option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+                                            <option value="Tunisia">Tunisia</option>
+                                            <option value="Turkey">Turkey</option>
+                                            <option value="Turkmenistan">Turkmenistan</option>
+                                            <option value="Turks &amp; Caicos Is">Turks &amp; Caicos Is</option>
+                                            <option value="Tuvalu">Tuvalu</option>
+                                            <option value="Uganda">Uganda</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="United Arab Erimates">United Arab Emirates</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="United States of America">United States of America</option>
+                                            <option value="Uraguay">Uruguay</option>
+                                            <option value="Uzbekistan">Uzbekistan</option>
+                                            <option value="Vanuatu">Vanuatu</option>
+                                            <option value="Vatican City State">Vatican City State</option>
+                                            <option value="Venezuela">Venezuela</option>
+                                            <option value="Vietnam">Vietnam</option>
+                                            <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                            <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                            <option value="Wake Island">Wake Island</option>
+                                            <option value="Wallis &amp; Futana Is">Wallis &amp; Futana Is</option>
+                                            <option value="Yemen">Yemen</option>
+                                            <option value="Zaire">Zaire</option>
+                                            <option value="Zambia">Zambia</option>
+                                            <option value="Zimbabwe">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group col-md-12">
+                                    <textarea rows="5" class="form-control" placeholder="any additional requirements?"></textarea>
+                                </div>
+                            </div>
+                            <div class="input-group col-md-12">
+                                <div class="ct-formSlash ct-u-marginBoth10"></div>
+                            </div>
+                            <script>
+                            </script>
+                            <div class="input-group col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="ct-datepicker">
+                                            <input type="text" class="form-control datepicker" name="checkin" placeholder="Check In">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ct-datepicker">
+                                            <input type="text" class="form-control datepicker" name="checkout" placeholder="Check Out">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <select class="ct-selectAdults ct-select--full" id="guests">
+                                            <option>&nbsp;</option>
+                                            <option value="1">1 Guest</option>
+                                            <option value="2">2 Guests</option>
+                                            <option value="3">3 Guests</option>
+                                            <option value="4">4 Guests</option>
+                                            <option value="5">5 Guests</option>
+                                            <option value="6">6 Guests</option>
+                                            <option value="7">7 Guests</option>
+                                            <option value="8">8 Guests</option>
+                                            <option value="9">9 Guests</option>
+                                            <option value="10">10 Guests</option>
+                                            <option value="11">11 Guests</option>
+                                            <option value="12">12 Guests</option>
+                                            <option value="13">13 Guests</option>
+                                            <option value="14">14 Guests</option>
+                                            <option value="15">15 Guests</option>
+                                            <option value="16">16 Guests</option>
+                                            <option value="17">17 Guests</option>
+                                            <option value="18">18 Guests</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group col-md-12">
+                                <div id="calculator_message" class="errorMessage alert alert-danger ct-u-marginTop20" style="display:none">
+                                    <span id="calculator_error">Ups! An error occured. Please try again later.</span>
+                                </div>
+                            </div>
+                            <div class="input-group col-md-12 well">
+                                <ul style="list-style-type: none;">
+                                    <li><span class="ct-fw-600">Rental Season:</span><span id="rental_season" type="text" value="0" /></span>
+                                        <li><span class="ct-fw-600">Nights:</span><span id="rental_days" type="number" value="0" />Select dates</span>
+                                        </li>
+                                        <li><span class="ct-fw-600">Week Nights:</span><span id="week_days" type="number" value="0" /></span>
+                                        </li>
+                                        <li><span class="ct-fw-600">Weekend Nights:</span><span id="weekend_days" type="number" value="0" /></span>
+                                        </li>
+                                        <li><span class="ct-fw-600">Guests:</span><span id="display_guests">Select # of guests</span>$<span id="day_rate"></span>/night</li>
+                                        <li><span class="ct-fw-600">Total Price:</span>$<span id="total_price"></span></li>
+                                </ul>
+                            </div>
+                            <div class="input-group col-md-12 ct-u-paddingTop30">
+                                <button type="submit" class="btn btn-primary">Send your enquiry</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ct-contactBox">
+            <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom0">
+                <h2>Directions</h2>
+                <p>From the South-West Poland International Airport follow out the Terminal Access Road from the airport. After 1.6 miles, turn right onto Krakowskie in the south. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta feugiat maximus. Nunc vehiculam sagittis velit non auctor. Ut vel diam quis sem venen rutrum ac non ipsum estiam nunc brevis. </p>
+            </div>
+            <div class="text-center">
+                <small>Liberia Airport to Casa Holmes </small>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d125511.24540276914!2d-85.68341024893883!3d10.561447249842253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f757e23ec259441%3A0x46eed7655eeaa1ac!2sDaniel+Oduber+Quir%C3%B3s+International+Airport%2C+Costa+Rica!3m2!1d10.5996226!2d-85.5383035!4m5!1s0x8f9e2989488b0689%3A0xaa221df163cbd2f9!2sCasa+Holmes%2C+Costa+Rica%2C+Coco%2C+Costa+Rica!3m2!1d10.5610029!2d-85.6891416!5e0!3m2!1sen!2shk!4v1438069085537" width="100%" height="345" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="ct-u-paddingBottom80 text-center">
+                <a target="_blank" href="https://www.google.com.hk/maps/dir/Liberia+Airport,+Costa+Rica/Casa+Holmes,+Costa+Rica,+Coco,+Costa+Rica/@10.5614472,-85.6834102,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8f757e23ec259441:0x46eed7655eeaa1ac!2m2!1d-85.5383035!2d10.5996226!1m5!1m1!1s0x8f9e2989488b0689:0xaa221df163cbd2f9!2m2!1d-85.6891416!2d10.5610029!3e0?hl=en" class="btn btn-primary">Google Map</a>
+            </div>
+        </div>
+        <div class="ct-contactBox" id="contact">
+            <div class="container">
+                <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom100 scroll" id="contact">
+                    <h2>Contact Us Directly</h2>
+                    <small>Do you have questions? Write to us.</small>
+                    <p>For a non-binding reservation please enter below the additional company information. We are happy to answer all your open questions in a personal conversation. Call us at: (012) 345-6789. If you are not fluent reach, please leave a callback request in your mailbox. If you want to contact us, please fill in the following fields: If you want to contact us, please fill in the following fields:</p>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <form class="ct-bookForm contactForm validateIt" method="post" action="./form/send.php" role="form" data-email-subject="Contact Form" data-show-errors="true">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="name" placeholder="first name" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="zipcode" placeholder="last name" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" name="zipcode" placeholder="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea rows="6" class="form-control" placeholder="message" required></textarea>
+                                </div>
+                                <div class="input-group ct-u-paddingTop20">
+                                    <button type="submit" class="btn btn-primary">Contact Us</button>
+                                </div>
+                            </form>
+                            <div class="successMessage alert alert-success ct-u-marginTop20" style="display: none">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                Thank You!
+                            </div>
+                            <div class="errorMessage alert alert-danger ct-u-marginTop20" style="display: none">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                Ups! An error occured. Please try again later.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="ct-u-paddingTop80">
+            <div class="container">
+                <div class="row text-center-sm">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <a href="index.html">
+                            <div class="ct-logo--transparent">
+                                <img src="./images/Casaholmes/casaholmes.png" alt="Logo Country">
+                                <div class="widget">
+                                    <div class="widget-title"><i class="fa fa-map-marker fa-fw"></i> Costa Rica</div>
+                                    <address>
+                                        Insert address / contact information here
+                                        <br>
+                                    </address>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ct-u-paddingTop50 text-center">
+                    <hr>
+                    <div class="ct-scrollUpButton ct-js-btnScrollUp ct-u-marginTop40 ct-u-marginBottom30">Go to top</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScripts -->
+    <script src="./js/externals.min.js"></script>
+    <script src="./plugins/owl/owl.carousel.min.js"></script>
+    <script src="./plugins/owl/thumbnail-init.js"></script>
+    <script src="./plugins/owl/init.js"></script>
+    <script src="./plugins/ct-mediaSection/js/jquery.stellar.min.js"></script>
+    <script src="./plugins/ct-mediaSection/js/init.js"></script>
+    <script src="./js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="./js/counter/jquery.countTo.js"></script>
+    <script src="./js/counter/init.js"></script>
+    <script src="./plugins/headroom/headroom.js"></script>
+    <script src="./plugins/headroom/jQuery.headroom.js"></script>
+    <script src="./plugins/headroom/init.js"></script>
+    <script src="./js/select2/select2.min.js"></script>
+    <script src="./js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="./js/onepage-scroll/jquery.onepage-scroll.js"></script>
+    <script src="./form/js/contact-form.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="./js/gmaps/gmap3.min.js"></script>
+    <script src="./js/gmaps/init.js"></script>
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>
