@@ -145,14 +145,14 @@ function parseBoolean(str, $defaultValue) {
             var target = this.hash, $target = $(target);
 
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 70
+                'scrollTop': $target.offset().top - 200
             }, 900, 'swing', function () {
                 window.location.hash = target;
             });
         });
         $('.ct-js-btnScrollUp').click(function (e) {
             e.preventDefault();
-            $("body,html").animate({scrollTop: 0}, 1200);
+            $("body,html").animate({scrollTop: 100}, 1200);
             $navbarel.find('.onepage').removeClass('active');
             $navbarel.find('.onepage:first-child').addClass('active');
             return false;

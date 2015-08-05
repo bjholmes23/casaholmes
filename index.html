@@ -76,16 +76,18 @@ video#bgvid {
         <header class=" scroll" id="home" data-height="460">
             <div class="container">
                 <video autoplay loop poster="./images/Casaholmes/casaholmes-video-background.jpg" id="bgvid">
-                        <source src="polina.webm" type="video/webm">
+                    <source src="polina.webm" type="video/webm">
                         <source src="./video/CasHolmes-short_reverse.mp4" type="video/mp4">
                 </video>
                 <script type="text/javascript">
                 var vid = document.getElementById("bgvid");
-                vid.playbackRate = .8;
+                var $videoSpeed = 0.8;
+
+                vid.playbackRate = 0.8;
                 </script>
                 <a href="index.html">
                     <div class="ct-u-marginTop150 ct-u-marginBottom150 text-center">
-                        <img height="270px" src="./images/translucent.png">
+                        <img class="translucent" height="270px" src="./images/translucent.png">
                     </div>
                 </a>
                 <div class="clearfix"></div>
@@ -137,7 +139,7 @@ video#bgvid {
             </div>
         </header>
         <div class="container ct-contactBox">
-            <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom80 scroll" id="about">
+            <div class="text-center ct-u-paddingTop150 ct-u-paddingBottom80 scroll" id="about">
                 <h2><img src="./images/Casaholmes/frog.png" class="flip">Welcome! <img src="./images/Casaholmes/frog.png"></h2>
                 <small>Welcome to the place where imagination becomes real</small>
                 <p>Imagine waking to the gentle sounds of distant surf, the eerie echo of howler monkeys and the flutter and song of tropical birds. Imagine opening your eyes and seeing a hallucinatory view of mountains and islands meeting an ocean as blue and bright as the sky and Indigo butterflies floating past. Imagine rising from bed and walking through architectural spaces designed with such care and detail that every view is extraordinary and you feel as if you are truly walking in a world of celestial beauty. </p>
@@ -147,7 +149,6 @@ video#bgvid {
                 </br>
                 <h2>History of the house</h2>
                 <small>
-
                 <p>Both my landscape architect husband and my backgrounds were strongly  influenced by beauty, art, and high quality craftsmanship. I grew up being privileged enough to travel around the world while staying in fabulous places. We fell in love with the natural beauty of Costa Rica the first time we saw it. Finding this spot with its location and views was a dream come true. We wanted to create a legacy of a beautiful restorative place where family and friends can truly retreat.</p>
                 <div id="panelThatSlides" style="display:none;">
                     <div id="contentThatFades" style="opacity:0;filter:alpha(opacity=0);">
@@ -159,8 +160,8 @@ video#bgvid {
                     <span id="readmore" onclick="toggleSlider();" style="cursor:pointer;span:hover {text-decoration:none;text-shadow: 1px 1px 1px #555;}">Read More</span>
             </div>
         </div>
-        <div class="ct-mediaSection" data-stellar-background-ratio="0.3" data-type="parallax" data-bg-image="./images/Casaholmes/casaholmes-background.jpg" data-bg-image-mobile="./images/content/beach-divided-section.jpg">
-            <div class="ct-dividedSection ct-dividedSection--primary">
+        <div class="ct-mediaSection tranluscent" data-stellar-background-ratio="0.3" data-type="parallax" data-bg-image-mobile="./images/content/beach-divided-section.jpg" style="    background-color: transparent;">
+            <div class="ct-dividedSection ct-dividedSection--primarys">
                 <div class="ct-scaleImage">
                     <img src="./images/Casaholmes/casaholmes1.jpg" alt="Chairs">
                 </div>
@@ -177,11 +178,12 @@ video#bgvid {
                 <div class="ct-dividedSection-mask"></div>
             </div>
         </div>
+        <div class= "container ct-contactBox ct-u-paddingBottom20">
             <div class="row scroll" id="amenities">
                 <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom20">
                     <h2>Amenities</h2>
                 </div>
-                <div class="ct-dividedMediaSection ct-dividedMediaSection--owl ct-u-marginBottom10 ct-u-marginTop80">
+                <div class="ct-dividedMediaSection ct-dividedMediaSection--owl ct-u-marginBottom10 ct-u-marginTop20">
                                 <!-- start upperamenities -->
                                 <div class="ct-dividedMediaSection-left"><div id="sync1" class="owl-carousel ct-js-popupGallery owl-carousel--arrowsType2" data-snap-ignore="true"><div class="item"><a href="./images/Amenities/IMG_0182.jpg" class="ct-js-magnificPopupImage" title=" I M G_0182"><img src="./images/Amenities/IMG_0182.jpg" alt=" I M G_0182"></a></div><div class="item"><a href="./images/Amenities/IMG_0184.jpg" class="ct-js-magnificPopupImage" title=" I M G_0184"><img src="./images/Amenities/IMG_0184.jpg" alt=" I M G_0184"></a></div><div class="item"><a href="./images/Amenities/IMG_0186.jpg" class="ct-js-magnificPopupImage" title=" I M G_0186"><img src="./images/Amenities/IMG_0186.jpg" alt=" I M G_0186"></a></div><div class="item"><a href="./images/Amenities/IMG_0187.jpg" class="ct-js-magnificPopupImage" title=" I M G_0187"><img src="./images/Amenities/IMG_0187.jpg" alt=" I M G_0187"></a></div><div class="item"><a href="./images/Amenities/thereIsAGlencairnForYourConvenience.jpg" class="ct-js-magnificPopupImage" title="There Is A Glencairn For Your Convenience"><img src="./images/Amenities/thereIsAGlencairnForYourConvenience.jpg" alt="There Is A Glencairn For Your Convenience"></a></div></div></div>
                                 <!-- end upperamenities -->
@@ -220,6 +222,7 @@ video#bgvid {
                                 <!-- start loweramenities -->
                                 <div id="sync2" class="owl-carousel" data-snap-ignore="true"><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0182.jpg" alt=" I M G_0182"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0184.jpg" alt=" I M G_0184"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0186.jpg" alt=" I M G_0186"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-IMG_0187.jpg" alt=" I M G_0187"></div><div class="item"><img src="./images/Amenities/thumbnails/thumbnail-thereIsAGlencairnForYourConvenience.jpg" alt="There Is A Glencairn For Your Convenience"></div></div></div>
                                 <!-- end loweramenities -->
+                </div>
             </div>
         <div class="container">
             <div class="row ct-u-paddingBottom10 ct-u-marginTop0">
@@ -251,8 +254,8 @@ fresh locally grown ingredients with eye catching presentations made with a Cent
                     <div class="ct-infoBox ct-infoBox--casual">
                         <div class="ct-infoBox-content">
                             <a href="http://www.noproblemacr.com/"><h3>Casa Holmes Managers</h3></a>
-                            <p>Wes and Lisa Rintelen are a competent gracious husband/wife  team who oversee Casa Holmes. They live closeby in Hermosa, a town next to Playas del Coco.
-Not only do they make sure Casa Holmes is in the best possible condition when you arrive but they will greet you and orient you to our home. They are also  willing to help you with getting  concierge services, rental vehicles etc…</p>                            <a href="http://www.noproblemacr.com/" class="btn btn-primary">More Information</a>
+                            <p>Wes and Lisa Rintelen are a competent gracious husband/wife  team who oversee Casa Holmes. They live closeby in Hermosa, a town next to Playas del Coco. Not only do they make sure Casa Holmes is in the best possible condition when you arrive but they will greet you and orient you to our home. They are also  willing to help you with getting  concierge services, rental vehicles etc…</p>
+<a href="http://www.noproblemacr.com/" class="btn btn-primary">More Information</a>
                         </div>
                     </div>
                 </div>
@@ -299,77 +302,10 @@ Not only do they make sure Casa Holmes is in the best possible condition when yo
                 <!-- end Gallery -->
             </div>
         </div>
-        <div class="ct-contactBox scroll ct-u-paddingBottom80" id="activities">
-            <div class="container ">
-                <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom60">
-                    <h2>Surroundings</h2>
-                    <small>Top spots in the lovely sunshine</small>
-                </div>
-            </div>
-            <div class="container">
-                <div class="ct-js-owl owl-carousel owl-carousel--arrowsType2" data-single="false" data-autoPlay="true" data-lgItems="3" data-mdItems="2" data-pagination="false" data-navigation="true" data-items="4" data-snap-ignore="true">
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item1.jpg" alt="Waterpark"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Sun Splash Family Waterpark</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">400m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item2.jpg" alt="Zoo"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Wildlife Refuge "Darling Zoo"</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">670m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item3.jpg" alt="Boat"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Boating in Warshaw</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">120m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item4.jpg" alt="Boat Tour"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Everglades Air Boat Tour</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">280m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item1.jpg" alt="Waterpark"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Sun Splash Family Waterpark</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">400m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item2.jpg" alt="Zoo"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Wildlife Refuge "Darling Zoo"</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">670m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item3.jpg" alt="Boat"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Boating in Warshaw</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">120m far</a>
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <a href="gallery.html"><img src="./images/content/country-slider-item4.jpg" alt="Boat Tour"></a>
-                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Everglades Air Boat Tour</figcaption>
-                        </figure>
-                        <a href="gallery.html" class="btn btn-primary btn-xs">280m far</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="vrbo" class="container scroll ct-u-paddingTop50">
+        <div id="vrbo" class="container scroll ct-u-paddingTop50 booking-form">
             <div class="text-center">
                 <h2>Book Now</h2>
+                <hr>
             </div>
             <div class="row ct-u-paddingTop50 ct-u-paddingBottom70">
                 <div class="col-md-6 hidden-sm hidden-xs">
@@ -729,6 +665,74 @@ Not only do they make sure Casa Holmes is in the best possible condition when yo
                 </div>
             </div>
         </div>
+        <div class="ct-contactBox scroll ct-u-paddingBottom80" id="activities">
+            <div class="container ">
+                <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom60">
+                    <h2>Activities</h2>
+                    <small>Top spots in the lovely sunshine</small>
+                </div>
+            </div>
+            <div class="container">
+                <div class="ct-js-owl owl-carousel owl-carousel--arrowsType2" data-single="false" data-autoPlay="true" data-lgItems="3" data-mdItems="2" data-pagination="false" data-navigation="true" data-items="4" data-snap-ignore="true">
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item1.jpg" alt="Waterpark"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Sun Splash Family Waterpark</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">400m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item2.jpg" alt="Zoo"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Wildlife Refuge "Darling Zoo"</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">670m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item3.jpg" alt="Boat"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Boating in Warshaw</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">120m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item4.jpg" alt="Boat Tour"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Everglades Air Boat Tour</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">280m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item1.jpg" alt="Waterpark"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Sun Splash Family Waterpark</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">400m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item2.jpg" alt="Zoo"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Wildlife Refuge "Darling Zoo"</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">670m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item3.jpg" alt="Boat"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Boating in Warshaw</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">120m far</a>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <a href="gallery.html"><img src="./images/content/country-slider-item4.jpg" alt="Boat Tour"></a>
+                            <figcaption class="ct-u-size18 ct-u-paddingBoth10">Everglades Air Boat Tour</figcaption>
+                        </figure>
+                        <a href="gallery.html" class="btn btn-primary btn-xs">280m far</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container ct-contactBox">
             <div class="text-center ct-u-paddingTop60 ct-u-paddingBottom0">
                 <h2>Directions</h2>
@@ -736,10 +740,13 @@ Not only do they make sure Casa Holmes is in the best possible condition when yo
             </div>
             <div class="text-center">
                 <small>Liberia Airport to Casa Holmes </small>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d125511.24540276914!2d-85.68341024893883!3d10.561447249842253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f757e23ec259441%3A0x46eed7655eeaa1ac!2sDaniel+Oduber+Quir%C3%B3s+International+Airport%2C+Costa+Rica!3m2!1d10.5996226!2d-85.5383035!4m5!1s0x8f9e2989488b0689%3A0xaa221df163cbd2f9!2sCasa+Holmes%2C+Costa+Rica%2C+Coco%2C+Costa+Rica!3m2!1d10.5610029!2d-85.6891416!5e0!3m2!1sen!2shk!4v1438069085537" width="100%" height="345" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class='embed-container  maps'>
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d125511.24540276914!2d-85.68341024893883!3d10.561447249842253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f757e23ec259441%3A0x46eed7655eeaa1ac!2sDaniel+Oduber+Quir%C3%B3s+International+Airport%2C+Costa+Rica!3m2!1d10.5996226!2d-85.5383035!4m5!1s0x8f9e2989488b0689%3A0xaa221df163cbd2f9!2sCasa+Holmes%2C+Costa+Rica%2C+Coco%2C+Costa+Rica!3m2!1d10.5610029!2d-85.6891416!5e0!3m2!1sen!2shk!4v1438069085537" width="100%" height="345" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="ct-u-paddingBottom80 text-center">
-                <a target="_blank" href="https://www.google.com.hk/maps/dir/Liberia+Airport,+Costa+Rica/Casa+Holmes,+Costa+Rica,+Coco,+Costa+Rica/@10.5614472,-85.6834102,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8f757e23ec259441:0x46eed7655eeaa1ac!2m2!1d-85.5383035!2d10.5996226!1m5!1m1!1s0x8f9e2989488b0689:0xaa221df163cbd2f9!2m2!1d-85.6891416!2d10.5610029!3e0?hl=en" class="btn btn-primary">Google Map</a>
+                <a target="_blank" href="https://www.google.com.hk/maps/dir/Liberia+Airport,+Costa+Rica/Casa+Holmes,+Costa+Rica,+Coco,+Costa+Rica/@10.5614472,-85.6834102,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8f757e23ec259441:0x46eed7655eeaa1ac!2m2!1d-85.5383035!2d10.5996226!1m5!1m1!1s0x8f9e2989488b0689:0xaa221df163cbd2f9!2m2!1d-85.6891416!2d10.5610029!3e0?hl=en" class="btn btn-primary"><i class="fa fa-plane fa-fw icon-large"></i>From Liberia Airport</a>
+                <a target="_blank" href="https://www.google.com.hk/maps/dir/San+Jose,+Costa+Rica/Casa+Holmes,+Costa+Rica,+Coco,+Costa+Rica/@10.1012936,-85.4415261,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8fa0e342c50d15c5:0xff8eac296443e836!2m2!1d-84.010995!2d9.6257333!1m5!1m1!1s0x8f9e2989488b0689:0xaa221df163cbd2f9!2m2!1d-85.6891416!2d10.5610029!3e0?hl=en" class="btn btn-primary"><i class="fa fa-plane fa-fw icon-large"></i>From San Jose Airport</a>
             </div>
         </div>
         <div class="ct-contactBox" id="contact">
@@ -785,7 +792,7 @@ Not only do they make sure Casa Holmes is in the best possible condition when yo
                 <div class="row text-center-sm">
                     <div class="col-sm-6 col-sm-offset-3 text-center">
                         <a href="index.html">
-                            <div class="ct-logo--transparent">
+                            <div class="footer-info">
                                 <img src="./images/Casaholmes/casaholmes.png" alt="Logo Country">
                                 <div class="widget">
                                     <div class="widget-title"><i class="fa fa-map-marker fa-fw"></i> Costa Rica</div>
@@ -794,13 +801,12 @@ Not only do they make sure Casa Holmes is in the best possible condition when yo
                                         <br>
                                     </address>
                                 </div>
+
+                                <div class="ct-scrollUpButton ct-js-btnScrollUp ct-u-marginTop40 ct-u-marginBottom30">Go to top
+                                </div>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="ct-u-paddingTop50 text-center">
-                    <hr>
-                    <div class="ct-scrollUpButton ct-js-btnScrollUp ct-u-marginTop40 ct-u-marginBottom30">Go to top</div>
                 </div>
             </div>
         </footer>

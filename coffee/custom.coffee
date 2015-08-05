@@ -68,3 +68,9 @@ jQuery ->
   $(document).on('change', '#guests', ->
     update()
   );
+
+  $(document).on('click', '.maps', ->
+    $('.maps iframe').css("pointer-events", "auto"))
+
+  $(document).on('mouseleave', '.maps', ->
+    $('.maps iframe').css("pointer-events", "none"))

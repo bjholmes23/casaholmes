@@ -24,6 +24,25 @@ img.flip {
   width:100%
 }
 
+.translucent{
+opacity:0
+}
+
+.maps iframe{
+    pointer-events: none;
+}
+
+.footer-info{
+    background-image: url('../images/background.jpg');
+    opacity: .9;
+    border-radius: 3%;
+}
+
+.booking-form{
+    background-image: url('../images/bg_pattern_10.jpg');
+    opacity: .99;
+    border-radius: 3%;
+}
 // z-index // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 @z-index-1: 1000;
@@ -192,7 +211,7 @@ body.boxed, .ptn1, .ptn2, .ptn3, .ptn4, .ptn5, .ptn6, .ptn7, .ptn8, .ptn9, .ptn1
     position: absolute;
     top:0;
     left:50%;
-    z-index: @z-index-1;
+    z-index: 0;
   }
   .ct-dividedSection-content{
     position: relative;

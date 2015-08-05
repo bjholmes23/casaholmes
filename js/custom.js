@@ -70,8 +70,14 @@
         return update();
       }
     });
-    return $(document).on('change', '#guests', function() {
+    $(document).on('change', '#guests', function() {
       return update();
+    });
+    $(document).on('click', '.maps', function() {
+      return $('.maps iframe').css("pointer-events", "auto");
+    });
+    return $(document).on('mouseleave', '.maps', function() {
+      return $('.maps iframe').css("pointer-events", "none");
     });
   });
 
