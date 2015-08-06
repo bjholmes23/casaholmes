@@ -22,8 +22,8 @@
 
                     $this.css('min-height', $this.attr('data-height'));
                     $this.css('height', $this.attr('data-height'));
-                    $this.find('.owl-wrapper-outer').css('min-height', $this.attr('data-height'));
-                    $this.find('.owl-wrapper-outer').css('height', $this.attr('data-height'));
+                    $this.find('.owl-wrapper-outer').css('min-height', 400);
+                    $this.find('.owl-wrapper-outer').css('height', 400);
                     $this.find('.owl-wrapper').css('min-height', $this.attr('data-height'));
                     $this.find('.owl-wrapper').css('height', $this.attr('data-height'));
                     $this.find(".item").css('height', $this.attr('data-height'));
