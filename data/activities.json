@@ -1,0 +1,63 @@
+[{
+    "id": 1,
+    "Name": "Waterfalls Tour",
+    "Link": "http://www.vargascostaricatours.com/water.htm",
+    "Duration": "2.5 hours",
+    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+}, {
+    "id": 2,
+    "Name": "Hot Springs",
+    "Link": "http://www.vargascostaricatours.com/miravalle.htm",
+    "Duration": "2 hours",
+    "ImgPath": "./assets/images/Casaholmes/bird.jpg"
+}, {
+    "id": 3,
+    "Name": "Canopy Adventure",
+    "Link": "http://www.vargascostaricatours.com/canopyadv.htm",
+    "Duration": "1.5 hours",
+    "ImgPath": "./assets/images/Casaholmes/frog.png"
+},
+{
+    "id": 4,
+    "Name": "Whitewater Rafting",
+    "Link": "http://www.vargascostaricatours.com/arenal1.htm",
+    "Duration": "3 hours",
+    "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
+},
+{
+    "id": 5,
+    "Name": "ATV / Horseback Riding",
+    "Link": "http://www.vargascostaricatours.com/beachHop.htm",
+    "Duration": "1 hours",
+    "ImgPath": "./assets/images/Casaholmes/whaleshark.jpg"
+},
+{
+    "id": 6,
+    "Name": "Rincon De La Vieja National Park",
+    "Link": "http://www.vargascostaricatours.com/rincon.htm",
+    "Duration": "1.5 hours",
+    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+},
+{
+    "id": 7,
+    "Name": "Arenal Volcano",
+    "Link": "http://www.vargascostaricatours.com/arenal2.htm",
+    "Duration": "3 hours",
+    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+},
+
+{
+    "id": 8,
+    "Name": "Monte Verde Cloud Forest",
+    "Link": "http://www.vargascostaricatours.com/monteverde.htm",
+    "Duration": "3 hours",
+    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+},
+{
+    "id": 9,
+    "Name": "Sailing, Snorkling/Diving, Fishing",
+    "Link": "http://www.vargascostaricatours.com/monteverde.htm",
+    "Duration": "3 hours",
+    "ImgPath": "./assets/images/Casaholmes/whaleshark.jpg"
+}
+ ]
