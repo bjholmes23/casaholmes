@@ -69,11 +69,13 @@
                                             <img class='media-object' src='./images/Casaholmes/casaholmes1-small.jpg' alt='Google Map Result' style='border-radius:3%'>\
                                             </br>\
                                             <img src='./images/Casaholmes/casaholmes-logo-small.png'  style='border-radius:0%;width:150px'>\
+                                            </br>\
+                                            <span style='padding-left:20px'>Playas Del Coco</span>\
                                         </div>\
                                     </div>\
                                 </div>",
                                 offset:{
-                                    y:-90,
+                                    y:-98,
                                     x:-260
                                 }
                             }
