@@ -3,7 +3,7 @@
     "Name": "Waterfalls Tour",
     "Link": "http://www.vargascostaricatours.com/water.htm",
     "Duration": "2.5 hours",
-    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+    "ImgPath": "./assets/images/Casaholmes/waterfall.png"
 }, {
     "id": 2,
     "Name": "Hot Springs",
@@ -51,13 +51,13 @@
     "Name": "Monte Verde Cloud Forest",
     "Link": "http://www.vargascostaricatours.com/monteverde.htm",
     "Duration": "3 hours",
-    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+    "ImgPath": "./assets/images/Casaholmes/cloudforest.png"
 },
 {
     "id": 9,
     "Name": "Sailing, Snorkling/Diving, Fishing",
     "Link": "http://www.vargascostaricatours.com/monteverde.htm",
     "Duration": "3 hours",
-    "ImgPath": "./assets/images/Casaholmes/whaleshark.jpg"
+    "ImgPath": "./assets/images/Casaholmes/boat.png"
 }
  ]
