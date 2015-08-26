@@ -1,5 +1,5 @@
 (function() {
-  var DAY, RateCalculator, calculator, rates, setEndDateDefault, update;
+  var DAY, RateCalculator, calculator, fillForms, rates, setEndDateDefault, update;
 
   rates = require('./rates');
 
@@ -8,6 +8,13 @@
   calculator = new RateCalculator(rates);
 
   DAY = 1000 * 60 * 60 * 24;
+
+  fillForms = function() {
+    $('[name=country]').val($('#select2-country-container').text());
+    $('[name=additionalReq]').val($('#additionalReq').val());
+    $('[name=guests]').val($('#select2-guests-container').text());
+    return $('[name=calculation]').val($('#calculationResults').text());
+  };
 
   update = function() {
     var d1, d2, dailyRate, days_passed, num_of_people;
@@ -76,9 +83,14 @@
     $(document).on('click', '.maps', function() {
       return $('.maps iframe').css("pointer-events", "auto");
     });
-    return $(document).on('mouseleave', '.maps', function() {
+    $(document).on('mouseleave', '.maps', function() {
       return $('.maps iframe').css("pointer-events", "none");
     });
+    $(document).on('mouseenter', '.btn', function() {
+      fillForms();
+      return console.log('Filling Forms...');
+    });
+    return true;
   });
 
 }).call(this);

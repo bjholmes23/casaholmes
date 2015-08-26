@@ -1,6 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 (function() {
-  var DAY, RateCalculator, calculator, rates, setEndDateDefault, update;
+  var DAY, RateCalculator, calculator, fillForms, rates, setEndDateDefault, update;
 
   rates = require('./rates');
 
@@ -9,6 +9,13 @@
   calculator = new RateCalculator(rates);
 
   DAY = 1000 * 60 * 60 * 24;
+
+  fillForms = function() {
+    $('[name=country]').val($('#select2-country-container').text());
+    $('[name=additionalReq]').val($('#additionalReq').val());
+    $('[name=guests]').val($('#select2-guests-container').text());
+    return $('[name=calculation]').val($('#calculationResults').text());
+  };
 
   update = function() {
     var d1, d2, dailyRate, days_passed, num_of_people;
@@ -77,9 +84,14 @@
     $(document).on('click', '.maps', function() {
       return $('.maps iframe').css("pointer-events", "auto");
     });
-    return $(document).on('mouseleave', '.maps', function() {
+    $(document).on('mouseleave', '.maps', function() {
       return $('.maps iframe').css("pointer-events", "none");
     });
+    $(document).on('mouseenter', '.btn', function() {
+      fillForms();
+      return console.log('Filling Forms...');
+    });
+    return true;
   });
 
 }).call(this);

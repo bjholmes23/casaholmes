@@ -4,6 +4,12 @@ calculator = new RateCalculator(rates)
 
 DAY = 1000 * 60 * 60  * 24
 
+fillForms = () ->
+  $('[name=country]').val($('#select2-country-container').text())
+  $('[name=additionalReq]').val($('#additionalReq').val())
+  $('[name=guests]').val($('#select2-guests-container').text())
+  $('[name=calculation]').val($('#calculationResults').text())
+
 update = () ->
   d1 = new Date($('input[name=checkin]').datepicker("getDate"))
   d2 = new Date($('input[name=checkout]').datepicker("getDate"))
@@ -56,7 +62,6 @@ jQuery ->
     if $('input[name=checkin]').val()
       $('input[name=checkin]').datepicker("hide")
       $('input[name=checkout]').datepicker("show")
-
       update()
   );
 
@@ -70,7 +75,13 @@ jQuery ->
   );
 
   $(document).on('click', '.maps', ->
-    $('.maps iframe').css("pointer-events", "auto"))
+    $('.maps iframe').css("pointer-events", "auto"));
 
   $(document).on('mouseleave', '.maps', ->
-    $('.maps iframe').css("pointer-events", "none"))
+    $('.maps iframe').css("pointer-events", "none"));
+
+  $(document).on('mouseenter', '.btn', ->
+    fillForms()
+    console.log('Filling Forms...'));
+
+  true

@@ -36,14 +36,14 @@
     "Name": "Rincon De La Vieja National Park",
     "Link": "http://www.vargascostaricatours.com/rincon.htm",
     "Duration": "1.5 hours",
-    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+    "ImgPath": "./assets/images/Casaholmes/mountain.png"
 },
 {
     "id": 7,
     "Name": "Arenal Volcano",
     "Link": "http://www.vargascostaricatours.com/arenal2.htm",
     "Duration": "3 hours",
-    "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+    "ImgPath": "./assets/images/Casaholmes/mountain.png"
 },
 
 {
