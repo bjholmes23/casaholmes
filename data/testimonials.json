@@ -6,5 +6,41 @@
     "Body": "Just wanted to tell you we had a very nice time. Your home is looking very lovely. Thank you for the lovely welcome package… By the way the masseuse was very good. We had her come 3 days. She is very sweet and good at what she does.",
     "Length": "August 10, 2015",
     "ImgPath": "./assets/images/Casaholmes/blue-turtle.png"
+},
+{
+    "id": 2,
+    "Name": "Couple",
+    "Title": "",
+    "Country": "Chicago, Illinois",
+    "Body": "We had a fantastic stay at Casa Holmes February 23-28, 2015!  Even the great pictures on the website cannot capture how beautiful and unique the house is and how spectacular the view is.  The property managers, Wes and Lisa, are extremely helpful with advice on the area. There is a local massage therapist who is very talented and who will come to the house. It was very difficult to leave this relaxing, luxurious property to return to the snow and ice at home. We would definitely book this property again!",
+    "Length": "February 2015",
+    "ImgPath": "./assets/images/Casaholmes/bird.jpg"
+},
+{
+    "id": 3,
+    "Name": "Large family",
+    "Title": "",
+    "Country": "Houston, Texas",
+    "Body": "Best Birthday Ever!   I stayed here 2/2015 to celebrate my 50th birthday with  9 members of my family and it was an amazing vacation. The house was clean ,  indescribably beautiful and the views are the best! We rented an SUV with navigation and had no trouble getting around to see local sights and neighboring beaches.The grocery store is very close and modern. The homeowner and the house managers took excellent care of us…..It takes exactly 30 minutes to get here from the Liberia airport which is small, modern and easy to get through customs and immigration. The downtown area is a 20 minute walk and is like a street party every night!",
+    "Length": "February 2015",
+    "ImgPath": "./assets/images/Casaholmes/frog.png"
+},
+{
+    "id": 4,
+    "Name": "North American Family",
+    "Title": "",
+    "Country": "California, USA",
+    "Body": "Amazing experience   . As others have stated, the view is absolutely  breathtaking and the sunsets spectacular. …….The home owner is incredible helpful and knowledgeable, and the house managers are wonderful resources as well. Costa Rica is beautiful and exotic and the people warm and friendly. Lovely, lovely, home and fabulous week. Thank you the wonderful family memories that will last us a lifetime :)",
+    "Length": "June 2014",
+    "ImgPath": "./assets/images/Casaholmes/whaleshark.jpg"
+},
+{
+    "id": 5,
+    "Name": "North American Family",
+    "Title": "",
+    "Country": "Missouri, USA",
+    "Body": "Can not say enough wonderful things about our stay at Casa Holmes. Highly recommend. The Glass House was superb and the views were stunning. The owner is extremely helpful and responsive.",
+    "Length": "Feb 2013",
+    "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
 }
 ]
