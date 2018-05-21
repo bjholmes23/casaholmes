@@ -9,34 +9,34 @@
     "Name": "Hot Springs",
     "Link": "http://www.vargascostaricatours.com/miravalle.htm",
     "Duration": "2 hours",
-    "ImgPath": "./assets/images/Casaholmes/bird.jpg"
+    "ImgPath": "./assets/images/Casaholmes/hotsprings.png"
 }, {
     "id": 3,
     "Name": "Canopy Adventure",
     "Link": "http://www.vargascostaricatours.com/canopyadv.htm",
     "Duration": "1.5 hours",
-    "ImgPath": "./assets/images/Casaholmes/frog.png"
+    "ImgPath": "./assets/images/Casaholmes/canopyzip.png"
 },
 {
     "id": 4,
     "Name": "Whitewater Rafting",
     "Link": "http://www.vargascostaricatours.com/arenal1.htm",
     "Duration": "3 hours",
-    "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
+    "ImgPath": "./assets/images/Casaholmes/whitewaterrafting.png"
 },
 {
     "id": 5,
     "Name": "ATV / Horseback Riding",
     "Link": "http://www.vargascostaricatours.com/beachHop.htm",
     "Duration": "1 hours",
-    "ImgPath": "./assets/images/Casaholmes/whaleshark.jpg"
+    "ImgPath": "./assets/images/Casaholmes/ATV.png"
 },
 {
     "id": 6,
     "Name": "Rincon De La Vieja National Park",
     "Link": "http://www.vargascostaricatours.com/rincon.htm",
     "Duration": "1.5 hours",
-    "ImgPath": "./assets/images/Casaholmes/mountain.png"
+    "ImgPath": "./assets/images/Casaholmes/nationalpark.png"
 },
 {
     "id": 7,

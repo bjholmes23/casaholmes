@@ -8,7 +8,6 @@ class RateCalculator
 
   calcRates: (checkInDate, checkOutDate, num_of_people) ->
     matchedSeasons = []
-    seasons = []
 
     # Adjusting the date range back a day because the checkout date doesn't actually count as a "night's stay"
     # checkOutDate.setDate(checkOutDate.getDate())
@@ -16,52 +15,57 @@ class RateCalculator
     console.log("checkinDate: ", checkInDate)
     console.log("checkOutDate: ", checkOutDate)
 
-    matchedSeasons = _.filter @rates, (s) => @inSeason(checkInDate, checkOutDate, s.startDate, s.endDate)
+    for k,v of @rates
+      if this.inSeason(checkInDate, checkOutDate, v.startDate, v.endDate)
+          matchedSeasons[k] = v
 
     console.log(matchedSeasons)
 
-    matchingSeason = _.max matchedSeasons, (s) -> s.weekRate
+    for k,v of matchedSeasons
+      if (typeof matchedSeason == 'undefined') or (v.weekRate > matchedSeason.weekRate)
+        matchedSeason = v
 
-    matchingSeason.errorMessage = ""
-    console.log("Season: ", matchingSeason.description)
-    console.log("Nightly rate: ", matchingSeason.nightRate)
-    console.log("Weekend night rate: ", matchingSeason.weekendNightRate)
-    console.log("Weekly Rate: ", matchingSeason.weekRate)
-    console.log("Minimum Stay: ", matchingSeason.minStay)
-
-    booking_days = Math.round((checkOutDate.getTime() - checkInDate.getTime()) / DAY)
-    if booking_days < matchingSeason.minStay
-      matchingSeason.errorMessage += "The minimum stay during the " + matchingSeason.description + " is " + matchingSeason.minStay
-
-    weekDays = @weekDaysBetweenDates(checkInDate, checkOutDate)
-    weekendDays = booking_days - weekDays
-
-    if booking_days < 7
-      dailyRate = ((weekDays * matchingSeason.nightRate) + (weekendDays * matchingSeason.weekendNightRate)) / booking_days
+    if (typeof matchedSeason == 'undefined')
+      matchedSeason = {}
+      matchedSeason.errorMessage = "Please fill in the number of people and the dates for your reservation."
     else
-      dailyRate = matchingSeason.weekRate / 7
+        matchedSeason.errorMessage = ""
+        console.log("Season: ", matchedSeason.description)
+        console.log("Nightly rate: ", matchedSeason.nightRate)
+        console.log("Weekend night rate: ", matchedSeason.weekendNightRate)
+        console.log("Weekly Rate: ", matchedSeason.weekRate)
+        console.log("Minimum Stay: ", matchedSeason.minStay)
 
-    extraPeople = 0
-    extraPeople = (num_of_people - PEOPLE_LIMIT) if (num_of_people - PEOPLE_LIMIT) > 0
-    dailyRate = dailyRate + (matchingSeason.extraPersonFee * extraPeople)
+        booking_days = Math.round((checkOutDate.getTime() - checkInDate.getTime()) / DAY)
+        if booking_days < matchedSeason.minStay
+          matchedSeason.errorMessage += "The minimum stay during the " + matchedSeason.description + " is " + matchedSeason.minStay
 
-    console.log('Weekdays: ', weekDays)
-    console.log('Weekend days:', weekendDays)
-    console.log('Daily Rate:', dailyRate)
+        weekDays = @weekDaysBetweenDates(checkInDate, checkOutDate)
+        weekendDays = booking_days - weekDays
 
-    matchingSeason.weekDays = weekDays
-    matchingSeason.weekendDays = weekendDays
-    matchingSeason.booking_days = booking_days
-    matchingSeason.dailyRate = dailyRate
-    matchingSeason.totalPrice = dailyRate * booking_days
+        if booking_days < 7
+          dailyRate = ((weekDays * matchedSeason.nightRate) + (weekendDays * matchedSeason.weekendNightRate)) / booking_days
+        else
+          dailyRate = matchedSeason.weekRate / 7
 
-    matchingSeason
+        extraPeople = 0
+        extraPeople = (num_of_people - PEOPLE_LIMIT) if (num_of_people - PEOPLE_LIMIT) > 0
+        dailyRate = dailyRate + (matchedSeason.extraPersonFee * extraPeople)
+
+        console.log('Weekdays: ', weekDays)
+        console.log('Weekend days:', weekendDays)
+        console.log('Daily Rate:', dailyRate)
+
+        matchedSeason.weekDays = weekDays
+        matchedSeason.weekendDays = weekendDays
+        matchedSeason.booking_days = booking_days
+        matchedSeason.dailyRate = dailyRate
+        matchedSeason.totalPrice = dailyRate * booking_days
+
+    matchedSeason
 
   inSeason: (checkInDate, checkOutDate, startDate, endDate) ->
     console.log(checkInDate, checkOutDate, startDate, endDate)
-    startDate.setYear(checkInDate.getFullYear())
-    endDate.setYear(checkInDate.getFullYear())
-    endDate.setYear(startDate.getFullYear() + 1) if startDate > endDate
     console.log("startDate: ", startDate)
     console.log("endDate: ", endDate)
     (checkInDate >= startDate && checkInDate <= endDate) or (checkOutDate >= startDate && checkOutDate <= endDate)

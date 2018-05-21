@@ -18,6 +18,9 @@
 
   update = function() {
     var d1, d2, dailyRate, days_passed, num_of_people;
+    if ((typeof num_of_people !== "undefined" && num_of_people !== null ? num_of_people.length : void 0) || (typeof $('input[name=checkin]').datepicker("getDate") === 'undefined') || (typeof $('input[name=checkout]').datepicker("getDate") === 'undefined')) {
+      return null;
+    }
     d1 = new Date($('input[name=checkin]').datepicker("getDate"));
     d2 = new Date($('input[name=checkout]').datepicker("getDate"));
     num_of_people = $('#guests').val();

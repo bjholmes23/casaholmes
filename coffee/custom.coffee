@@ -11,6 +11,7 @@ fillForms = () ->
   $('[name=calculation]').val($('#calculationResults').text())
 
 update = () ->
+  return null if num_of_people?.length or (typeof $('input[name=checkin]').datepicker("getDate") == 'undefined') or (typeof $('input[name=checkout]').datepicker("getDate") == 'undefined')
   d1 = new Date($('input[name=checkin]').datepicker("getDate"))
   d2 = new Date($('input[name=checkout]').datepicker("getDate"))
   num_of_people = $('#guests').val()

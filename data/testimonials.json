@@ -1,4 +1,55 @@
-[{
+[
+{
+    "id": 1,
+    "Name": "Evans",
+    "Title": "",
+    "Country": "",
+    "Body": "The house was the perfect landing spot for us, a sort of base camp and rejuvenator between our mini-adventures. We really loved the experience and will likely look to enjoy it again! Many thanks as well to Kenia who was so helpful with the small odds-and-ends that round off a great experience; she helped on several occasions with connections and advice that helped us with the assistance you just wouldn’t know to ask for until the need arises. Not to be overlooked was the fantastic meal Chef Dean and team prepared- a true highlight and delicious celebration dinner!",
+    "Length": "May 2018",
+    "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
+},
+    {
+    "id": 8,
+    "Name": "Karen",
+    "Title": "",
+    "Country": "Ontario, Canada",
+    "Body": "Want to thank you for letting us rent your beautiful home.  Life was so simple while we were there with absolutely no unforeseen frustrations.  The location was excellent and the pool was divine.  We will have pleasant memories for a long time. Accommodations were great for our grandbaby and it was wonderful to watch her develop in one week's time.  She loved the crib and the pool and the bougainvillea on the deck. I will write a review as well, but I wanted to personally thank you.",
+    "Length": "March 15 2017",
+    "ImgPath": "./assets/images/Casaholmes/whaleshark.jpg"
+},{
+    "id": 9,
+    "Name": "Lynn",
+    "Title": "",
+    "Country": "",
+    "Body": "Your home was spectacular in every way. We enjoyed your hospitality so much. And Tim loved his breakfast cake!! Thank you again for your warm welcome!  What a glorious magical place!  ….We’d love to come back someday. Thank you again - we all enjoyed Casa Holmes!",
+    "Length": "March 4 2017",
+    "ImgPath": "./assets/images/Casaholmes/frog.png"
+},{
+    "id": 10,
+    "Name": "Doug and Melissa",
+    "Title": "",
+    "Country": "Indiana",
+    "Body": "We are packing up and are getting  ready to leave your beautiful vacation home. Thanks so much for the hospitality and gifts for the girls, Your staff is wonderful and we utilized Rocio 3 nights. We hope to return as we really enjoyed our stay.",
+    "Length": "Feb 16, 2017",
+    "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
+},{
+    "id": 7,
+    "Name": "Couple",
+    "Title": "",
+    "Country": "Canada",
+    "Body": "My husband and I spent a week at Casa Holmes celebrating his birthday. The house is spectacular. Steve and Lisa (property managers) were both welcoming and helpful. We booked a tour with Vargas Tours to Monteverdi and were impressed not only with the beauty of Costa Rica, but the knowledge of our guide Franco of all things Costa Rican, Central American and the flora and fauna of this beautiful country. We found travel fairly easy and the local area charming. Massages by Carmen were the icing on the cake. Nita is so welcoming and responsive to any questions. The house itself has everything you need and, while certainly daunting, the driveway is manageable! Highly recommend this amazing home and lovely area.",
+    "Length": "Nov 2016",
+    "ImgPath": "./assets/images/Casaholmes/bird.jpg"
+},
+{
+    "id": 6,
+    "Name": "Couple",
+    "Title": "",
+    "Country": "Ontario, Canada",
+    "Body": "Casa Holmes is everything we were looking for to relax and celebrate.   We have rented a number of homes as vacation destinations but your home is the best of all.   It is as much your warm and welcoming approach as it is the beauty of the home that has made it our favourite.",
+    "Length": "Nov 2016",
+    "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
+},{
     "id": 1,
     "Name": "Couple and Adult son",
     "Title": "",
@@ -44,3 +95,4 @@
     "ImgPath": "./assets/images/Casaholmes/green-turtle.png"
 }
 ]
+

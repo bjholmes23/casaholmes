@@ -385,16 +385,16 @@ function parseBoolean(str, $defaultValue) {
             });
         }
 
-        var $preloader = $('.ct-preloader');
-        var $content = $('.ct-preloader-content');
+        // var $preloader = $('.ct-preloader');
+        // var $content = $('.ct-preloader-content');
 
-        var $timeout = setTimeout(function(){
-            $($preloader).addClass('animated').addClass('fadeOut');
-            $($content).addClass('animated').addClass('fadeOut');
-        }, 0);
-        var $timeout2 = setTimeout(function(){
-            $($preloader).css('display', 'none').css('z-index', '-9999');
-        }, 500);
+        // var $timeout = setTimeout(function(){
+        //     $($preloader).addClass('animated').addClass('fadeOut');
+        //     $($content).addClass('animated').addClass('fadeOut');
+        // }, 0);
+        // var $timeout2 = setTimeout(function(){
+        //     $($preloader).css('display', 'none').css('z-index', '-9999');
+        // }, 500);
     });
 
     $(window).scroll(function(){

@@ -1,36 +1,69 @@
 (function() {
   module.exports = {
-    greenSeason: {
+    greenSeason2017: {
       name: "greenSeason",
       description: "Green Season",
-      startDate: new Date("1-May"),
-      endDate: new Date("13-Nov"),
-      nightRate: 500,
-      weekendNightRate: 500,
-      weekRate: 3350,
-      extraPersonFee: 38,
+      startDate: new Date("1-May-2017"),
+      endDate: new Date("13-Nov-2017"),
+      nightRate: 625,
+      weekendNightRate: 650,
+      weekRate: 4375,
+      extraPersonFee: 40,
       minStay: 2
     },
-    highSeason: {
+    highSeason2017: {
       name: "highSeason",
       description: "High Season",
-      startDate: new Date("14-Nov"),
-      endDate: new Date("30-Apr"),
-      nightRate: 590,
-      weekendNightRate: 625,
-      weekRate: 3900,
-      extraPersonFee: 38,
+      startDate: new Date("14-Nov-2017"),
+      endDate: new Date("30-Apr-2018"),
+      nightRate: 650,
+      weekendNightRate: 680,
+      weekRate: 4550,
+      extraPersonFee: 40,
       minStay: 2
     },
-    christmas: {
+    christmas2017: {
       name: "christmasSeason",
       description: "Christmas Season",
-      startDate: new Date("19-Dec"),
-      endDate: new Date("30-Dec"),
+      startDate: new Date("19-Dec-2017"),
+      endDate: new Date("30-Dec-2017"),
       nightRate: void 0,
       weekendNightRate: void 0,
       weekRate: 6750,
-      extraPersonFee: 38,
+      extraPersonFee: 40,
+      minStay: 7
+    },
+    greenSeason2018: {
+      name: "greenSeason",
+      description: "Green Season",
+      startDate: new Date("1-May-2018"),
+      endDate: new Date("13-Nov-2018"),
+      nightRate: 625,
+      weekendNightRate: 650,
+      weekRate: 4375,
+      extraPersonFee: 40,
+      minStay: 2
+    },
+    highSeason2018: {
+      name: "highSeason",
+      description: "High Season",
+      startDate: new Date("14-Nov-2018"),
+      endDate: new Date("30-Apr-2019"),
+      nightRate: 625,
+      weekendNightRate: 680,
+      weekRate: 4550,
+      extraPersonFee: 40,
+      minStay: 2
+    },
+    christmas2018: {
+      name: "christmasSeason",
+      description: "Christmas Season",
+      startDate: new Date("19-Dec-2018"),
+      endDate: new Date("30-Dec-2018"),
+      nightRate: void 0,
+      weekendNightRate: void 0,
+      weekRate: 6850,
+      extraPersonFee: 40,
       minStay: 7
     }
   };

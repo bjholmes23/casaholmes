@@ -13,60 +13,64 @@
     }
 
     RateCalculator.prototype.calcRates = function(checkInDate, checkOutDate, num_of_people) {
-      var booking_days, dailyRate, extraPeople, matchedSeasons, matchingSeason, seasons, weekDays, weekendDays;
+      var booking_days, dailyRate, extraPeople, k, matchedSeason, matchedSeasons, ref, v, weekDays, weekendDays;
       matchedSeasons = [];
-      seasons = [];
       console.log("checkinDate: ", checkInDate);
       console.log("checkOutDate: ", checkOutDate);
-      matchedSeasons = _.filter(this.rates, (function(_this) {
-        return function(s) {
-          return _this.inSeason(checkInDate, checkOutDate, s.startDate, s.endDate);
-        };
-      })(this));
+      ref = this.rates;
+      for (k in ref) {
+        v = ref[k];
+        if (this.inSeason(checkInDate, checkOutDate, v.startDate, v.endDate)) {
+          matchedSeasons[k] = v;
+        }
+      }
       console.log(matchedSeasons);
-      matchingSeason = _.max(matchedSeasons, function(s) {
-        return s.weekRate;
-      });
-      matchingSeason.errorMessage = "";
-      console.log("Season: ", matchingSeason.description);
-      console.log("Nightly rate: ", matchingSeason.nightRate);
-      console.log("Weekend night rate: ", matchingSeason.weekendNightRate);
-      console.log("Weekly Rate: ", matchingSeason.weekRate);
-      console.log("Minimum Stay: ", matchingSeason.minStay);
-      booking_days = Math.round((checkOutDate.getTime() - checkInDate.getTime()) / DAY);
-      if (booking_days < matchingSeason.minStay) {
-        matchingSeason.errorMessage += "The minimum stay during the " + matchingSeason.description + " is " + matchingSeason.minStay;
+      for (k in matchedSeasons) {
+        v = matchedSeasons[k];
+        if ((typeof matchedSeason === 'undefined') || (v.weekRate > matchedSeason.weekRate)) {
+          matchedSeason = v;
+        }
       }
-      weekDays = this.weekDaysBetweenDates(checkInDate, checkOutDate);
-      weekendDays = booking_days - weekDays;
-      if (booking_days < 7) {
-        dailyRate = ((weekDays * matchingSeason.nightRate) + (weekendDays * matchingSeason.weekendNightRate)) / booking_days;
+      if (typeof matchedSeason === 'undefined') {
+        matchedSeason = {};
+        matchedSeason.errorMessage = "Please fill in the number of people and the dates for your reservation.";
       } else {
-        dailyRate = matchingSeason.weekRate / 7;
+        matchedSeason.errorMessage = "";
+        console.log("Season: ", matchedSeason.description);
+        console.log("Nightly rate: ", matchedSeason.nightRate);
+        console.log("Weekend night rate: ", matchedSeason.weekendNightRate);
+        console.log("Weekly Rate: ", matchedSeason.weekRate);
+        console.log("Minimum Stay: ", matchedSeason.minStay);
+        booking_days = Math.round((checkOutDate.getTime() - checkInDate.getTime()) / DAY);
+        if (booking_days < matchedSeason.minStay) {
+          matchedSeason.errorMessage += "The minimum stay during the " + matchedSeason.description + " is " + matchedSeason.minStay;
+        }
+        weekDays = this.weekDaysBetweenDates(checkInDate, checkOutDate);
+        weekendDays = booking_days - weekDays;
+        if (booking_days < 7) {
+          dailyRate = ((weekDays * matchedSeason.nightRate) + (weekendDays * matchedSeason.weekendNightRate)) / booking_days;
+        } else {
+          dailyRate = matchedSeason.weekRate / 7;
+        }
+        extraPeople = 0;
+        if ((num_of_people - PEOPLE_LIMIT) > 0) {
+          extraPeople = num_of_people - PEOPLE_LIMIT;
+        }
+        dailyRate = dailyRate + (matchedSeason.extraPersonFee * extraPeople);
+        console.log('Weekdays: ', weekDays);
+        console.log('Weekend days:', weekendDays);
+        console.log('Daily Rate:', dailyRate);
+        matchedSeason.weekDays = weekDays;
+        matchedSeason.weekendDays = weekendDays;
+        matchedSeason.booking_days = booking_days;
+        matchedSeason.dailyRate = dailyRate;
+        matchedSeason.totalPrice = dailyRate * booking_days;
       }
-      extraPeople = 0;
-      if ((num_of_people - PEOPLE_LIMIT) > 0) {
-        extraPeople = num_of_people - PEOPLE_LIMIT;
-      }
-      dailyRate = dailyRate + (matchingSeason.extraPersonFee * extraPeople);
-      console.log('Weekdays: ', weekDays);
-      console.log('Weekend days:', weekendDays);
-      console.log('Daily Rate:', dailyRate);
-      matchingSeason.weekDays = weekDays;
-      matchingSeason.weekendDays = weekendDays;
-      matchingSeason.booking_days = booking_days;
-      matchingSeason.dailyRate = dailyRate;
-      matchingSeason.totalPrice = dailyRate * booking_days;
-      return matchingSeason;
+      return matchedSeason;
     };
 
     RateCalculator.prototype.inSeason = function(checkInDate, checkOutDate, startDate, endDate) {
       console.log(checkInDate, checkOutDate, startDate, endDate);
-      startDate.setYear(checkInDate.getFullYear());
-      endDate.setYear(checkInDate.getFullYear());
-      if (startDate > endDate) {
-        endDate.setYear(startDate.getFullYear() + 1);
-      }
       console.log("startDate: ", startDate);
       console.log("endDate: ", endDate);
       return (checkInDate >= startDate && checkInDate <= endDate) || (checkOutDate >= startDate && checkOutDate <= endDate);
